@@ -7,7 +7,22 @@
     "recycle_bin_folder": "_v_recycle_bin",
     "sub_directories": [
         {
-            "name": "zongqi"
+            "name": "PHP编程相关"
+        },
+        {
+            "name": "面向对象设计"
+        },
+        {
+            "name": "方法和效率"
+        },
+        {
+            "name": "资源"
+        },
+        {
+            "name": "Nginx"
+        },
+        {
+            "name": "Mysql"
         }
     ],
     "tags": [
