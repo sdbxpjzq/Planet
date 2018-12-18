@@ -5,6 +5,21 @@
     "sub_directories": [
         {
             "name": "缓存技术"
+        },
+        {
+            "name": "变量"
+        },
+        {
+            "name": "Swoole"
+        },
+        {
+            "name": "curl"
+        },
+        {
+            "name": "cookie&session"
+        },
+        {
+            "name": "数组"
         }
     ],
     "version": "1"

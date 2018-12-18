@@ -3,6 +3,9 @@
     "files": [
     ],
     "sub_directories": [
+        {
+            "name": "redis"
+        }
     ],
     "version": "1"
 }

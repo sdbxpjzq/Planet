@@ -23,6 +23,15 @@
         },
         {
             "name": "Mysql"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "Docker"
+        },
+        {
+            "name": "JavaScript"
         }
     ],
     "tags": [
