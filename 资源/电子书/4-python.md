@@ -1,0 +1,2 @@
+- [python参考手册](http://img.zongqilive.cn/python%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.pdf)
+- 
