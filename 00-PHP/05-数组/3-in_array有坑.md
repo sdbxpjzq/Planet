@@ -28,6 +28,8 @@ if (in_array($needle, $arr, true)) {
 
 ## 使用`array_search`
 
+如果找到则返回它的键，否则返回 **FALSE**。
+
 ```php
 
 $arr = array('abc', '999');
@@ -38,5 +40,16 @@ if (array_search($needle, $arr)) {
     echo 'not in array';
 }
 
+```
+
+### 注意键值是`0`的情况
+
+```php
+if (array_search(1 , [ 1 ])) {
+    echo 'true';
+}else{
+    echo 'false';
+}
+// 结果输出 false
 ```
 
