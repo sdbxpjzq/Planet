@@ -4,6 +4,8 @@
 
 `require()`，文件只处理一次（实际上，文本内容替换了require()语句）
 
+`include`有返回值, `require`没有返回值.
+
 
 
 ## 使用场景
