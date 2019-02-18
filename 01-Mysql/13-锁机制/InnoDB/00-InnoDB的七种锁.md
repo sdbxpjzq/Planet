@@ -83,3 +83,7 @@ insert into t values(12, ooo); // 不阻塞
 (5)临键锁(Next-key Locks)
 (6)插入意向锁(Insert Intention Locks)
 (7)自增锁(Auto-inc Locks)
+
+
+
+https://mp.weixin.qq.com/s/mOZS75lgT4VhLmiS8BiV3A
