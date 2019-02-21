@@ -10,7 +10,7 @@
 
 5.每个节点中的元素从小到大排列，节点当中k-1个元素正好是k个孩子包含的元素的值域分划。
 
-## 3阶B+Tree
+## 3阶B-Tree
 
 ![](https://ws3.sinaimg.cn/large/006tKfTcly1g0bwczf4kvj31620hkwgs.jpg)
 
