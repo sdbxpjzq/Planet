@@ -1,0 +1,2 @@
+- [redis设计与实现(第二版)](https://img.zongqilive.cn/redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%28%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf)
+- 
