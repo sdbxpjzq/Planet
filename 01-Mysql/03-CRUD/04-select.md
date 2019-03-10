@@ -1,3 +1,11 @@
+
+
+![](https://ws2.sinaimg.cn/large/006tKfTcly1g0wf6e4oayj30zt09vadf.jpg)
+
+
+
+
+
 ```
 SELECT [ALL|DISTINCT] select_expr FROM -> WHERE -> GROUP BY [合计函数] -> HAVING -> ORDER BY -> LIMIT
 a. select_expr
