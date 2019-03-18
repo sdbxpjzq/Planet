@@ -37,6 +37,10 @@ Innodb与MyISAM的最大不同有2点:
 
 ### 触发Next-Key Lock
 
+![](https://ws4.sinaimg.cn/large/006tKfTcly1g14wf1wzxbj31i60beq6d.jpg)
+
+
+
 #### 非唯一索引
 
 ```sql
