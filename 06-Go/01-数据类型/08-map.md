@@ -9,6 +9,7 @@
 map1 := make(map[int]string, 10)
 map1[0] = "吴勇"
 map1[2] = "松江"
+
 fmt.Println(map1) // map[0:吴勇 2:松江]
 
 
@@ -23,6 +24,33 @@ fmt.Println(map1)
 1. `map`在使用前一定要`make`
 2. ``map`的`key`若重复了, 则以最后这个值为准
 3. `map`的`key`是无序的
+
+
+
+## 返回值
+
+有2种选择.
+
+赋值给一个变量:  代表`value`
+
+赋值给两个变量:
+
+1. 第一个值表示`value`
+2. 第二个值,表示查找的`key`是否存在于`map`里 (Bool类型 )
+
+```go
+map1 := make(map[int]string, 10)
+map1[0] = "吴勇"
+map1[2] = "松江"
+test1, exists := map1[0]
+if exists {
+  fmt.Println(test1)
+}
+test2 := map1[2]
+fmt.Println(test2)
+```
+
+
 
 ## 增加和删除
 

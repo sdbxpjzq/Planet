@@ -3,4 +3,6 @@
 - [深入理解PHP内核](http://img.zongqilive.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%86%85%E6%A0%B8.pdf)
 - [PHP7新特性](http://img.zongqilive.cn/PHP7%E6%96%B0%E7%89%B9%E6%80%A7.pdf)
 - [PHP核心技术与最佳实践](http://img.zongqilive.cn/PHP%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%20-%20%E5%88%97%E6%97%AD%E6%9D%BE%EF%BC%8C%E9%99%88%E6%96%87.mobi)
+- [PHP7内核剖析](http://img.zongqilive.cn/PHP7%E5%86%85%E6%A0%B8%E5%89%96%E6%9E%90.epub)
+- 
 
