@@ -47,7 +47,11 @@ yum -y install privoxy
 echo 'forward-socks5 / 127.0.0.1:1080 .' >> /etc/privoxy/config
 ```
 
-### 设置 http/https 代理
+### 设置 http/https 代理(不需要设置)
+
+`vim /etc/profile`
+
+` source /etc/profile`
 
 ```
 export http_proxy=http://127.0.0.1:8118 # privoxy默认监听端口为8118

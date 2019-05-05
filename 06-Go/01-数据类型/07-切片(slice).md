@@ -69,11 +69,11 @@ fmt.Println(cap(slice))
 
 
 
-
-
 ## 内存分析
 
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1g20u6g3douj30fi08baa7.jpg)
+
+
 
 `slice`是一个引用类型
 
@@ -103,7 +103,9 @@ type slice struct {
 
 ## append
 
-对切片进行动态追加
+对切片进行动态追加.
+
+使用`...`运算符, 可以将一个切片的所有元素追加到另一个切片里.
 
 ```go
 slice := []int{1, 2, 3, 4}
@@ -148,6 +150,24 @@ fmt.Println(a) // [400 500]
 ![](https://ws4.sinaimg.cn/large/006tNc79ly1g20wp1pcloj31le0oqaez.jpg)
 
 
+
+## 多维切片
+
+```go
+// 创建一个整型切片的切片
+slice := [][]int{{10}, {100, 200}}
+// 为第一个切片追加值为 20 的元素 
+slice[0] = append(slice[0], 20)
+```
+
+## 函数间传递切片
+
+由于与切片关联的数据包含在底层数组里，不属于切片本身，所以将切片
+复制到任意函数的时候，对底层数组大小都不会有影响。复制时只会复制切片本身，不会涉及底层数组
+
+
+
+![](https://ws3.sinaimg.cn/large/006tNc79ly1g2jqcxs1cdj31640qw76h.jpg)
 
 
 
