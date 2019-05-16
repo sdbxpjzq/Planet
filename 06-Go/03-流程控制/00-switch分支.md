@@ -47,6 +47,20 @@ switch x.(type) {
 }
 ```
 
+## 相邻的空`case`不构成多条件匹配
+
+```go
+a := 'a'
+switch a {
+  case 'a':
+	case 'b':
+  println("bb")
+
+}
+// 输出 空
+
+```
+
 
 
 

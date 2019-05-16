@@ -112,15 +112,7 @@ fmt.Printf("%v",a.Name)
 
 
 
-## 相关细节
-
-1. `channel`可以声明为只读, 或者只写的性质
-
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g2970fwbapj30fb0jh3zk.jpg)
-
-2. 使用`select`可以解决从管道取数据阻塞问题
-
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g29758e8k6j30ji09bdga.jpg)
+## 其他说明
 
 
 

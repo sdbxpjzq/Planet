@@ -49,3 +49,57 @@ for index, value := range str {
 4 111
 ```
 
+`range`会复制目标对象, 受直接影响的是数组
+
+```go
+data := [3]int{10, 20, 30}
+	for key, value := range data {
+		if key == 0 {
+			data[0] += 100
+			data[1] += 200
+			data[2] += 300
+		}
+		fmt.Println(value) // 10 20 30
+	}
+
+	fmt.Println(data) // 110 220 330
+
+	for key, value := range data[:] { // 转成切片
+		if key == 0 {
+			data[0] += 100
+			data[1] += 200
+			data[2] += 300
+		}
+		fmt.Println(value) // 210  420 630
+	}
+
+	fmt.Println(data) // 210  420 630
+```
+
+如果`range`目标表达式是函数调用,  也仅被执行一次
+
+```go
+func data() []int  {
+	fmt.Println("data int")
+	return []int{10, 20, 30}
+}
+
+func main {
+  for key, value := range data() {
+		fmt.Println(key, value)
+	}
+}
+
+输出:
+data int
+0 10
+1 20
+2 30
+
+
+```
+
+
+
+
+
