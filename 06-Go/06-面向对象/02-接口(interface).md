@@ -9,7 +9,7 @@
 
 空接口`interface{}`没有任何方法, 所有类型都实现了空接口,可以把任何一个变量赋值给空接口
 
-多态通过接口实现
+## 多态通过接口实现
 
 ```go
 // 定义一个接口
@@ -44,6 +44,20 @@ func main() {
 	computer.work(phone)
 }
 ```
+
+## `nil`状态判定
+
+```go
+var a interface{} = nil
+var b interface{} = (*int)(nil)
+fmt.Println(a == nil) // true
+fmt.Println(b == nil) // false
+fmt.Println(reflect.ValueOf(b).IsNil()) // true
+
+
+```
+
+## 
 
 
 

@@ -12,7 +12,7 @@
 
 5. 多行字符串拼接, `+`处理问题
 
-6. `string`底层是一个`byte`数组, 因此`string`可以进行切片处理.
+6. `string`底层是一个`byte`数组, 因此`string`可以进行切片处理. 返回的子串仍然是`string`
 
 ```go
 a := "hello\ndddd"

@@ -13,8 +13,8 @@ func Countoff(n int) {
 
 func main() {
   wg := sync.WaitGroup{}
+  wg.Add(10) // 建议Add 最好是放到外边, 以免Add尚未执行, Wait已经退出
   for i := 0; i < 10; i++ {
-    wg.Add(1)
     go func(n int) {
       Countoff(n)
       wg.Done()
