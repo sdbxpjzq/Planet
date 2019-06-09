@@ -18,6 +18,8 @@ insert into t2 values (1,'1'),(4, '4'), (7, '7'), (10, '10');
 
 ![](http://ww2.sinaimg.cn/large/006tNc79ly1g37pvzrwldj30tu0gxacl.jpg)
 
+![](http://ww4.sinaimg.cn/large/006tNc79ly1g3uzd1ohcmj30z80u0gq9.jpg)
+
 
 
 

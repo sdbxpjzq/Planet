@@ -186,9 +186,3 @@ HTTP1.1 中的请求方式：
 | OPTIONS | 请求查询服务器的性能，或者查询与资源相关的选项和需求               |
 
 
-
-
-
-# 参考
-
-http://blog.csdn.net/qq_30353203/article/details/50997498

@@ -10,7 +10,13 @@ HTTP/2 采用二进制格式传输数据，而非HTTP1.1 中的文本格式，�
 
 多路复用是通过在一个流上分配多个HTTP请求响应交换来实现的。流在很大程度上是相互独立的，因此一个请求上的阻塞或终止并不会影响其他请求的处理。下图一目了然
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0c2ze1htbj30k00juwf5.jpg)
+![](http://ww1.sinaimg.cn/large/006tNc79ly1g3ultovl9mj30k00jut98.jpg)
+
+
+
+
+
+
 
 ### **Header压缩**
 

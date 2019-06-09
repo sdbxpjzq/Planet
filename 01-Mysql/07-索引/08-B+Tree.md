@@ -10,6 +10,10 @@
 
 ![](https://ws3.sinaimg.cn/large/006tKfTcly1g0db3sfh5oj31b80msgon.jpg)
 
+![](http://ww3.sinaimg.cn/large/006tNc79ly1g3nmvojf2gj30lo09zt8s.jpg)
+
+
+
 每一个父元素的节点都出现在子节点中, 是子节点的的最大或者最小元素.
 
 

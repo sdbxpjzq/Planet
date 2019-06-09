@@ -1,8 +1,9 @@
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0chor6efej31cm0hkdji.jpg)
+1. Get请求提交的数据会在地址栏显示出来, 而post请求不会再地址栏显示出来
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0chpeo7pjj31by058mxn.jpg)
+2. 安全性
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0chpm3x4sj31as05i0tw.jpg)
+   post的安全性要比GET高
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1g0chprn3o7j31bu03wwf8.jpg)
+3. 传输数据的大小
 
+   Get请求由于浏览器对地址长度的限制而导致传输的数据有限制, 而post请求没有限制
