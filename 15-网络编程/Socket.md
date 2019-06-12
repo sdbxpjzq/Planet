@@ -278,15 +278,7 @@ epoll 的描述符事件有两种触发模式：LT（level trigger）和 ET（ed
 
 很容易产生一种错觉认为只要用 epoll 就可以了，select 和 poll 都已经过时了，其实它们都有各自的使用场景。
 
-### 1. select 应用场景
 
-select 的 timeout 参数精度为 1ns，而 poll 和 epoll 为 1ms，因此 select 更加适用于实时性要求比较高的场景，比如核反应堆的控制。
-
-select 可移植性更好，几乎被所有主流平台所支持。
-
-### 2. poll 应用场景
-
-poll 没有最大描述符数量的限制，如果平台支持并且对实时性要求不高，应该使用 poll 而不是 select。
 
 ### 3. epoll 应用场景
 
