@@ -1,6 +1,3 @@
-#  CGI 和 FastCGI 
-CGI 是 Web Server 与后台语言交互的协议，有了这个协议，开发者可以使用任何语言处理 Web Server 发来的请求，动态的生成内容。但 CGI 有一个致命的缺点，那就是每处理一个请求都需要 fork 一个全新的进程，随着 Web 的兴起，高并发越来越成为常态，这样低效的方式明显不能满足需求。就这样，FastCGI 诞生了，CGI 很快就退出了历史的舞台。FastCGI，顾名思义为更快的 CGI，它允许在一个进程内处理多个请求，而不是一个请求处理完毕就直接结束进程，性能上有了很大的提高。
-
 # FPM 
 FPM (FastCGI Process Manager)，它是 FastCGI 的实现，任何实现了 FastCGI 协议的 Web Server 都能够与之通信。FPM 之于标准的 FastCGI，也提供了一些增强功能，
 FPM 是一个 PHP 进程管理器，包含 master 进程和 worker 进程两种进程：master 进程只有一个，负责监听端口，接收来自 Web Server 的请求，而 worker 进程则一般有多个 (具体数量根据实际需要配置)，每个进程内部都嵌入了一个 PHP 解释器，是 PHP 代码真正执行的地方，下图是我本机上 fpm 的进程情况，1一个 master 进程，3个 worker 进程：
