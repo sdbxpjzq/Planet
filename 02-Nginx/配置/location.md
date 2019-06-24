@@ -46,7 +46,7 @@ location / {
 
 那么产生的效果如下：
 
-- 访问根目录` /`，比如` http://localhost/` 将匹配 规则A
+- 访问根目录 /，比如` http://localhost/` 将匹配 规则A
 - 访问 `http://localhost/login` 将匹配 规则B，`http://localhost/register `则匹配 规则F
 - 访问 `http://localhost/static/a.html` 将匹配 规则C
 - 访问 `http://localhost/static/files/a.exe` 将匹配 规则X，虽然 规则C 也能匹配到，但因为最大匹配原则，最终选中了 规则X。你可以测试下，去掉规则 X ，则当前 URL 会匹配上 规则C。
