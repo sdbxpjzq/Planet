@@ -19,7 +19,7 @@ vagrant reload  # 重启虚拟机
 vagrant status  # 查看虚拟机运行状态
 vagrant destroy  # 销毁当前虚拟机
 
-vagrant package name # 打包 可以将一个虚拟机打包成Box，供别人使用。别人只要用打包的box来创建一个虚拟机即可, 如下:
+vagrant package --output name # 打包 可以将一个虚拟机打包成Box，供别人使用。别人只要用打包的box来创建一个虚拟机即可, 如下:
 vagrant box add myubuntu ~/Documents/Vagrant/Ubunutu/ubunut.box
 
 
@@ -60,4 +60,8 @@ config.vm.synced_folder "宿主机目录", "/vagrant_data", type: "nfs"
 ```
 
 Windows可以使用`SMB`方式
+
+
+
+
 
