@@ -9,7 +9,7 @@ grep [options] pattern file
 栗子:
 
 ```shell
-grep "moo"  traget_file :  查找target_file 文件中 moo所在的行
+grep "moo"  traget_file #  查找target_file 文件中 moo所在的行
 ```
 
 
