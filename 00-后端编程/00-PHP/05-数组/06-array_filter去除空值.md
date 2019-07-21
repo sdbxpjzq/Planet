@@ -19,11 +19,13 @@ $entry = array(
     4 => ''
 );
 print_r(array_filter($entry));
+/*
 Array   
 (   
     [0] => foo   
     [2] => -1   
 )
+*/
 
 ```
 
