@@ -1,4 +1,4 @@
-PHP的数组结构，其内部是使用hashTable结构来实现的，所以我们在php的源码中没有看到zend_array文件，而是zend_hash.h和zend_hash.c两个入口文件。
+PHP的数组结构，其内部是使用`hashTable`结构来实现的，所以我们在php的源码中是`zend_hash.h`和`zend_hash.c`两个入口文件。
 
 HashTable主要分为两个环节：
 
