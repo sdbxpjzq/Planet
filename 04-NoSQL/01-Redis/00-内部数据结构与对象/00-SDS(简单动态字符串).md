@@ -91,6 +91,44 @@ C语言字符串每次有修改可能都要重新分配更合适的内存，而S
 
 
 
+## embstr vs raw
+
+Redis 的字符串有两种存储方式，在长度特别短时，使用 `emb` 形式存储 (embeded)，当长度超过 44 时，使用 `raw` 形式存储。
+
+### embstr 和 raw 的本质区别
+
+内存分配上: 
+embstr调用1次malloc, 因此redisObject和SDS内存是连续分配的
+raw需要调用2次malloc, 因此redisObject和SDS内存不连续分配
+使用上: 
+embstr 整体 64 byte, 正好和cpu cache line 64byte 一样, 可以更好的使用缓存, 效率更高
+
+
+
+### 分析
+
+数字 —> int
+
+![](https://ae01.alicdn.com/kf/H14a2b37ab9e84bc1902f072ab470843eg.jpg)
+
+![](https://ae01.alicdn.com/kf/H66623cfd6145409eac0e5331e64d4263N.jpg)
+
+![](https://ae01.alicdn.com/kf/Ha38142fd18cb4aa2a2757048b194088fX.jpg)
+
+![](https://ae01.alicdn.com/kf/H78b054464f5042d4abbb1cb557c64ab4Q.jpg)
+
+
+
+
+
+
+
+## 扩容策略
+
+字符串在长度小于 1M 之前，扩容空间采用加倍策略，也就是保留 100% 的冗余空间。当长度超过 1M 之后，为了避免加倍后的冗余空间过大而导致浪费，每次扩容只会多分配 1M 大小的冗余空间。
+
+
+
 
 
 
