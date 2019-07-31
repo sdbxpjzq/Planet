@@ -1,6 +1,12 @@
-[go2shell](https://zipzapmac.com/Go2Shell)
+## 软件下载网站
 
-[iterm2](https://www.iterm2.com/)
+https://www.waitsun.com/
+
+https://www.zhinin.com/
+
+
 
 [百度网盘不限速](https://www.baiduwp.com/)
+
+
 
