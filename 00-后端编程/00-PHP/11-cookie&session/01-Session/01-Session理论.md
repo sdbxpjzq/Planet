@@ -16,6 +16,8 @@ session_destroy();  // 删除整个session文件
 1. `session_start();`
 2. 在`php.ini`配置文件中自动开启
 
+调用之前不能有任何的输出，空格和空行都不行.
+
 ## session 严格模式
 
 在`php.ini`文件中, 设置 `session.use_strict_mode = 1`.

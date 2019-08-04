@@ -1,3 +1,9 @@
+## session的3种保存方式
+
+```php
+session.save_handler = files || user || memcache
+```
+
 ## 修改配置
 
 修改配置文件, 将session存储机制修改为`user`(自定义).

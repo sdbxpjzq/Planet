@@ -25,6 +25,12 @@ function exportToExcel($filename, $tileArray=[], $dataArray=[]){
     ob_end_clean();
 }
 
+```
+
+使用
+
+```php
+
 \Ko_Web_Route::VGet("index", function () {
     $tileArray = [
         '姓名','电话'
