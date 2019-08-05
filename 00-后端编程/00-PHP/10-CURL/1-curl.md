@@ -32,11 +32,13 @@ public static function aSendPost(string $url, array $postData)
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
         ));
-  # 不验证https证书
+  			// 不验证https证书
        	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-  # 不返回header头信息
+  			// 不返回header头信息
         curl_setopt($ch, CURLOPT_HEADER, false);
+  			// 返回内容不直接输出
+  		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         curl_setopt($ch, CURLOPT_URL, $url);
         // post数据
