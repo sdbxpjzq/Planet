@@ -2,7 +2,7 @@
 
 ### kill
 
-kill 执行的是 `kill -15 PID`
+kill  默认执行的是 `kill -15 PID`
 
 系统会发送一个SIGTERM的信号给对应的程序,  告诉应用主动关闭., 效果是正常退出进程
 
