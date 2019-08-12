@@ -1,3 +1,19 @@
+安装
+
+插件
+
+```
+vagrant plugin install vagrant-vbguest
+```
+
+
+
+
+
+
+
+## 增加虚拟机
+
 centos6
 
 ```
@@ -27,7 +43,7 @@ vagrant reload  # 重启虚拟机
 vagrant status  # 查看虚拟机运行状态
 vagrant destroy  # 销毁当前虚拟机
 
-vagrant package --output name # 打包 可以将一个虚拟机打包成Box，供别人使用。别人只要用打包的box来创建一个虚拟机即可, 如下:
+vagrant package --output name.box # 打包 可以将一个虚拟机打包成Box，供别人使用。别人只要用打包的box来创建一个虚拟机即可, 如下:
 vagrant box add myubuntu ~/Documents/Vagrant/Ubunutu/ubunut.box
 
 
