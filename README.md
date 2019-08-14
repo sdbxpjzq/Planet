@@ -8,10 +8,6 @@
 
 
 
-![](https://youpaiyun.zongqilive.cn//20190814110744.png)
-
-
-
 
 
 
