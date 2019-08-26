@@ -19,6 +19,7 @@ HTTP 请求由三部分组成：请求行、  请求头和请求体。
 
 ```text
 GET /index.php HTTP/1.1
+
 Host: 127.0.0.1:8080
 Connection: keep-alive
 Pragma: no-cache
