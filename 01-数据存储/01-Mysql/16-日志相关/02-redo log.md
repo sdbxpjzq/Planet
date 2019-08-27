@@ -6,7 +6,7 @@ redo log buffer 里面的内容,不是每次生成后都要直接持久化到磁
 
 ### redo log 可能存在的三种状态
 
-![ZbTsH0.png](https://s2.ax1x.com/2019/07/16/ZbTsH0.png)
+![](https://ae01.alicdn.com/kf/Hf9493574bd7e4f27950a2d0cb8b04c2fI.jpg)
 
 这三种状态分别是：
 

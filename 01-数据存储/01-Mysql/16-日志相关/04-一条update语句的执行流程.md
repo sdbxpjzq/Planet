@@ -1,3 +1,5 @@
+InnoDB 在更新数据的时候会采用` WAL 技术`，也就是 `Write Ahead Logging(预写日志)`
+
 ```sql
 uptate emp set empname ='Java架构师养成记' where id =2;
 ```
@@ -13,3 +15,17 @@ uptate emp set empname ='Java架构师养成记' where id =2;
 - 执行器调用引擎的提交事务接口，引擎把刚刚写入的 redo  log 的prepare状态改成提交 commit 状态，更新完成。
 
   
+
+下面我们理一下一条　update 语句的执行过程：
+
+```sql
+update person set age = 30 where id = 1;
+```
+
+- 1.分配事务 ID ，开启事务，获取锁，没有获取到锁则等待。
+- 2.执行器先通过存储引擎找到 id = 1 的数据页，如果缓冲池有则直接取出，没有则去主键索引上取出对应的数据页放入缓冲池。
+- 3.在数据页内找到 id = 1 这行记录，取出，将 age 改为 30 然后写入内存
+- 4.生成 redolog undolog 到内存，redolog 状态为 prepare
+- 5.将 redolog undolog 写入文件并调用 fsync
+- 6.server 层生成 binlog 并写入文件调用 fsync
+- 7.事务提交，将 redolog 的状态改为 commited 释放锁
