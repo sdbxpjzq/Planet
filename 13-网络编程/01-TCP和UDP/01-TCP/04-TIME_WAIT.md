@@ -24,3 +24,36 @@
 2）允许老的重复分节在网络中消逝  
     TCP分节可能由于路由器异常而“迷途”，在迷途期间，TCP发送端可能因确认超时而重发这个分节，迷途的分节在路由器修复后也会被送到最终目的地，这个 原来的迷途分节就称为lost duplicate。在关闭一个TCP连接后，马上又重新建立起一个相同的IP地址和端口之间的TCP连接，后一个连接被称为前一个连接的化身 （incarnation)，那么有可能出现这种情况，前一个连接的迷途重复分组在前一个连接终止后出现，从而被误解成从属于新的化身。为了避免这个情 况，TCP不允许处于TIME_WAIT状态的连接启动一个新的化身，因为TIME_WAIT状态持续2MSL，就可以保证当成功建立一个TCP连接的时 候，来自连接先前化身的重复分组已经在网络中消逝。
 
+
+
+## 大量TIME_WAIT的解决办法
+
+### 修改MSL的时间
+
+​	修改MSL的时间，Linux的MSL默认是60s，2个MSL就是2分钟，所以系统默认的time_wait时间很长，但是该参数需要修改Linux的内存并进行重新编译，一般不建议采用这种方案。
+
+
+
+### 调整ulimit的参数，调整TCP参数
+
+​	linux默认的open files值为1024（当前进程可打开的openfiles数），可以调大该参数值。
+
+```
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_tw_recycle = 1
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_fin_timeout = 30
+```
+
+**tcp_tw_recycle**为可用于快速回收处于TIME_WAIT状态的socket以便重新分配，设置为1 即开启 ；
+
+  **tcp_tw_reuse设置为 1，即** 开启该选项后，kernel会复用处于TIME_WAIT状态的socket，当然复用的前提是“从协议角度来看，复用是安全的”。
+
+ 修改结束后sysctl –p 既可以使内核生效。
+
+
+
+
+
+
+
