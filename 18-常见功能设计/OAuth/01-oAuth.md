@@ -22,6 +22,6 @@ oauth授权流程
 
 
 
-\1. code是有时效性的，尽量在获取后的几分钟内去申请获取access_token
+1. code是有时效性的，尽量在获取后的几分钟内去申请获取access_token
 
-\2. access_token也是有过期时间的，而过期后就需要重新获取新的令牌
+2. access_token也是有过期时间的，而过期后就需要重新获取新的令牌

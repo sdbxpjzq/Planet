@@ -4,6 +4,16 @@
 
 
 
+查看版本
+
+```
+\Illuminate\Foundation\Application.php
+```
+
+
+
+
+
 ## 安装
 
 ```shell

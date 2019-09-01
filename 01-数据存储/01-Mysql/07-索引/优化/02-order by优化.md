@@ -70,6 +70,13 @@ where a = const and b > const order by b,
 where a = const and b > const order by c,
 ```
 
+若有(a,b,c)
+
+```sql
+# c和 b无法用到索引,顺序颠倒Using filesort
+where a=? and d = ? order by c, b;  // 无法用到索引
+```
+
 
 
 ```sql

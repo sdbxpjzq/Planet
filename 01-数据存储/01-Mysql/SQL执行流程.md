@@ -6,3 +6,7 @@
 - 优化器：生成执行计划，选择索引
 - 执行器：操作索引返回结果
 
+
+
+![](https://ae01.alicdn.com/kf/H26db73a2340e4d88bfa3668df9ff32d2D.png)
+
