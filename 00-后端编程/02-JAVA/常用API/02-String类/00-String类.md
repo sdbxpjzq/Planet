@@ -1,8 +1,10 @@
 
 
-java.lang.String`
+`java.lang.String`
 
 字符串是常量, 它的值再创建之后不能修改,
+
+是引用类型
 
 
 
