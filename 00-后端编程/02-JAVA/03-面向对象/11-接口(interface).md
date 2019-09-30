@@ -6,6 +6,18 @@ public interface Fu {
 
 **子类要重写接口中的`所有的`抽象方法, 除非该子类是`抽象类`.**
 
+子类可以实现多个接口, 接口与接口之间是多继承
+
+```java
+// 子类实现多个就接口
+public class Zi implements Fu , A, B {}
+```
+
+```java
+// 接口之前多继承
+public interface Fu extends A, B {}
+```
+
 接口中不能有静态代码块
 
 接口中不能有构造方法
