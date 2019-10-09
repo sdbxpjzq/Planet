@@ -74,24 +74,6 @@ ngrok
 
 
 
-#  处理 .DS_Store 的方法
-
-.DS_Store是Mac OS保存文件夹的自定义属性的隐藏文件，如文件的图标位置或背景色，相当于Windows的desktop.ini。
-
-## 禁止生成
-
-`defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE`
-
-
-
-## 恢复生成
-
-`defaults delete com.apple.desktopservices DSDontWriteNetworkStores`
-
-## 删除所有的 .DS_Store 文件
-
-`sudo find / -name ".DS_Store" -depth -exec rm {} \;`
-
 
 
 # 设置macOS 10.12 Sierra 安全性与隐私的设置中任何来源选项
@@ -123,75 +105,15 @@ http://browsersync.cn/
 1. `npm install -g browser-sync`
 2. `browser-sync start --server --files "**/*.css, **/*.html"`
 
-# 读写NTFS格式硬盘
-
-- 免费推荐--http://enjoygineering.com/mounty/
-
-
-`brew cask install mounty`
-
-#  Homebrew(推荐安装)
-
-- [Homebrew][https://brew.sh/]
-
-# 图片自动上传图床
-
-- iPic
-- iPic move
-- AIfred(需要破解版本) 设置快捷键
-- https://github.com/chenxtdo/UPImageMacApp
 
 
 
-# Mac免费的文件解压缩软件—keka
-
-http://www.kekaosx.com/zh-cn/
 
 
 
 # VIP视频解析网站
 
 http://v.laod.cn/
-
-
-
-#  翻墙推荐
-
-http://blog.sina.com.cn/s/blog_170550d8a0102wzr2.html
-
-
-
-## 红杏影梭
-
-https://www.hxss.biz/
-
-
-
-## 云末加速
-
-http://www.ymjsq.org/
-
-## FreeVPN Plus
-
-去appstore下载就行. 
-
-https://www.freevpn.pw/
-
-win.mac都有
-
-## 蓝灯
-
-https://github.com/getlantern/forum
-
-
-
-## 一枝红杏
-
-99元/年, 50G/月, 同时支持1个在线
-
-199元/年,无限流量,同事支持3个客户端在线
-
-https://my.yizhihongxing.com/aff.php?aff=5961
 
 
 
@@ -219,10 +141,6 @@ hosts所在文件夹：
   - hosts位于 `/etc/hosts`
 - 绝大多数Unix系统都是在 `/etc/hosts`
 
-# Node 安装
-
-- Windows或Mac系统，访问[https://nodejs.org/](https://nodejs.org/)，安装**LTS**版本的Node，默认安装即可
-
 
 
 
@@ -242,42 +160,6 @@ hosts所在文件夹：
   4、终端：make (编译)
 
   5、终端：make install (安装)
-
-# 代理工具--whistle
-
-- whistle --跨平台[手册](https://avwo.github.io/whistle/)[教程](https://www.qcloud.com/community/article/151)--(目前只是使用了简单的代理,许多功能还没有用到) 
-- 安装(或更新)— `sudo npm install -g whistle`
-- 启动— `w2 start`
-
-
->  电脑也要安装证书的
-
-https://mp.weixin.qq.com/s/Dehz2FhFriNBVseRlyAwzw
-
-## 更新日志
-
-https://github.com/avwo/whistle/blob/master/CHANGELOG.md
-
-## weinre的使用
-
-weinre可以用于调试远程页面特别是移动端的网页.
-
-配置规则的时候,后面加上 `weinre id`
-
-```js
- # xxx为对应的weinre id，主要用于页面分类，默认为anonymous
- www.example.com weinre://xxx  
-```
-
-栗子:
-
-```js
-m.mafengwo.cn/sales/activity/honey_center/ weinre://test  
-```
-
-在weinre下拉列表就可以找到设置的weinre id的，点击会新开一个weinre调试页面，可以开始使用weinre.
-
-https://avwo.github.io/whistle/rules/weinre.html
 
 
 
