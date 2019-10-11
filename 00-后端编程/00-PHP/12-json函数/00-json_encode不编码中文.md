@@ -1,5 +1,3 @@
-[TOC]
-
 # json_encode() 不编码中文
 
 ```php
