@@ -92,12 +92,6 @@ ngrok
 
 
 
-# Photoshop下载安装
-
-http://tieba.baidu.com/p/4791130877
-
-
-
 #  实时刷新
 
 http://browsersync.cn/
@@ -123,25 +117,6 @@ http://v.laod.cn/
 [老D博客](https://laod.cn/hosts)
 
 [github上的](https://github.com/racaljk/hosts)
-
-### `host`文件位置
-
-hosts所在文件夹：
-
-- Windows 系统
-  - hosts位于 `C:\Windows\System32\drivers\etc\hosts`
-- Android（安卓）系统
-  - hosts位于 `/etc/hosts`
-- Mac（苹果电脑）系统
-  - hosts位于 `/etc/hosts`
-  - 可以使用iHost工具
-- iPhone（iOS）系统
-  - hosts位于 `/etc/hosts`
-- Linux系统
-  - hosts位于 `/etc/hosts`
-- 绝大多数Unix系统都是在 `/etc/hosts`
-
-
 
 
 
