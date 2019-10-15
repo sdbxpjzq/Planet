@@ -52,6 +52,20 @@ public static function aSendPost(string $url, array $postData)
 
 ```
 
+## 检查错误
+
+```php
+// ...
+$output = curl_exec($ch);
+if ($output === FALSE) { // 注意是  === 
+    echo "cURL Error: " . curl_error($ch);
+}
+// ...
+
+```
+
+请注意，比较的时候我们用的是`=== FALSE`，而非`== FALSE`。因为我们得区分 空输出 和 布尔值FALSE，后者才是真正的错误。
+
 
 
 [http://www.uxuew.cn/php/7126.html](http://www.uxuew.cn/php/7126.html)
