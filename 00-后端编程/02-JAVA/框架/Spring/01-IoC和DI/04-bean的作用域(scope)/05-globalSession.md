@@ -1,0 +1,1 @@
+一般用于`Portiet`应用环境, 该作用域仅适用于`WebApplicationContext`环境
