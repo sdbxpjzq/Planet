@@ -89,3 +89,16 @@ public class MyBeanFactory {
 }
 ```
 
+### 测试类
+
+```java
+public class Test {
+
+    @org.junit.Test
+    public void createUserService() {
+        UserServiceImpl userService = MyBeanFactory.createUserService();
+        userService.addUser();
+    }
+}
+```
+
