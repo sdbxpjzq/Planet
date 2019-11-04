@@ -2,7 +2,7 @@
 
 不能存储`null`键, `null`值
 
-HashTable被更先进的集合(HashMap,  ArrayList)取代了
+==HashTable被更先进的集合(HashMap,  ArrayList)取代了==
 
 HashTable的子类`Proprtties`依然活跃.
 
