@@ -8,6 +8,10 @@ https://mp.weixin.qq.com/s/BhMI7ERT5as1GA-9hZPZaw
 
 https://zhile.io/2018/08/25/jetbrains-license-server-crack.html
 
+```
+-javaagent:/Users/zongqi/Downloads/IDEAPoJie/jetbrains-agent.jar
+```
+
 
 
 ## 插件推荐
