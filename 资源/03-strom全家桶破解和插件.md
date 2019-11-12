@@ -21,6 +21,34 @@ https://zhile.io/2018/08/25/jetbrains-license-server-crack.html
 
 
 
-java
+## IDEA
+
+配置1:
+
+![](https://pic.superbed.cn/item/5dc7e1a48e0e2e3ee9fea7ad.jpg)
+
+自动导入包和导入包优化的设置
+
+![](https://pic.superbed.cn/item/5dc7e22f8e0e2e3ee9febc03.jpg)
+
+tab页面多行显示的设置
+
+![](https://pic.superbed.cn/item/5dc7e3508e0e2e3ee9fef6e8.jpg)
+
+
+
+
+
+
+
+
 
 - Free Mybatis plugin
+
+- #### Grep console
+
+- #### MyBatis Log Plugin
+
+- #### Alibaba Java Coding Guidelines
+
+- #### Lombok
