@@ -29,6 +29,10 @@ AOF 是更新频率最快的, redis会优先使用这种方式恢复数据
 
 
 
+## 配置文件
+
+![](https://pic1.superbed.cn/item/5de8f38cf1f6f81c50d1b037.jpg)
+
 
 
 
