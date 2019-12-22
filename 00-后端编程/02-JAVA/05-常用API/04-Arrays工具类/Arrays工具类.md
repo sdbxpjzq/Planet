@@ -4,7 +4,9 @@
 
 ## Arrays.asList(T... a)
 
-转换成`List集合`
+转换成固定长度的`List集合`
+
+返回的`List`集合, 既不是`ArrayList`实例, 也不是`Vevtor`实例,而是一个固定固定长度的`List`集合 
 
 ```java
 List<Integer> list2 = Arrays.asList(1, 2, 3);
