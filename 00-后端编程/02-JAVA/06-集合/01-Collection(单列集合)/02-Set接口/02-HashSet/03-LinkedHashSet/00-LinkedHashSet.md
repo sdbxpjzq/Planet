@@ -1,12 +1,14 @@
-`java.util.LinkedHashSet` 是`链表和哈希组合`的一个数据存储结构 . `有序集合`
+- 是HashSet的子类.`java.util.LinkedHashSet集合 extends  HashSet集合`
 
-是HashSet的子类.`java.util.LinkedHashSet集合 extends  HashSet集合`
+- `LinkedHashSet`根据元素的`hashCode`值来决定元素的存储位置, 但同时使用`双向链表`维护元素的次序, [ 添加数据时 维护了两个引用, 记录此数据的 前一个数据 和 后一个数据]
+- `LinkedHashSet`插入性能略低于`HashSet`, 但在迭代访问`Set`里的全部元素时有很好的性能
+- `LinkedHashSet`不允许集合元素重复
 
-## 特点
+## 优点
 
-底层是一个`哈希表(数组+[链表 /红黑树])` + `链表`, 多了一条`链表(记录元素的存储顺序)`, 保证元素有序
+对于频繁的遍历操作, `LinkedHashSet`效率高于`HashSet`
 
-
+代码实例:
 
 ```java
 public static void main(String[] args) throws ParseException {
