@@ -9,9 +9,15 @@ public HashSet(Collection<? extends E> c) {
 }
 ```
 
-`HashSet`底层是`HashMap`.
+## `HashSet`底层是`HashMap`
 
+Set的底层是Map, 存在Map的key中.
 
+```java
+public boolean add(E e) {
+  return map.put(e, PRESENT)==null;
+}
+```
 
 
 
