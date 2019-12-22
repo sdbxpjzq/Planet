@@ -1,5 +1,3 @@
-
-
 ```java
 // 序列化
 Gson gson = new Gson();
