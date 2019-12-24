@@ -1,0 +1,46 @@
+## @Autowired注解和静态方法
+
+
+
+### 方法1:  使用构造方法
+
+```java
+import org.springframework.stereotype.Component;
+
+@Component // 这个必须添加
+public class RedisTest {
+  private static JedisCluster redis;
+  
+  @Autowire // 这个可以不写
+  public RedisTest(JedisCluster jedisCluster) {
+        redis = jedisCluster;
+  }
+  
+  public static void test(){
+    redis.append("zongqixxx", "999");
+  }
+}
+
+```
+
+### 方法二：用@PostConstruct注解
+
+```java
+@Component
+public class Test {
+    private static PatViewDAO staticPdao;
+  
+    @Autowired
+    private PatViewDAO pdao2;
+  
+    @PostConstruct
+    public void beforeInit() {
+        staticPdao = pdao2;
+    }
+  
+    public static List<Patient> patientListUtil(String pat_id){
+	return pdao.findPats(pat_id);
+    }
+}
+```
+
