@@ -6,15 +6,11 @@
 System.currentTimeMillis();
 ```
 
-## arraycopy
+![](https://pic.superbed.cn/item/5e05c1b076085c3289bb38ee.jpg)
 
-`public static void arraycopy(Object src, int srcPos, Object dest, int desrPos, int length)`
+![](https://pic.superbed.cn/item/5e05c1f876085c3289bb4f06.jpg)
 
-将数组中指定的数据 拷贝到另一个数组中.
 
-**数组的拷贝是系统级别的, 性能很高**
-
-![](https://ae01.alicdn.com/kf/H476ef46363034ea3a9ca56f48227edfaJ.jpg)
 
 
 
