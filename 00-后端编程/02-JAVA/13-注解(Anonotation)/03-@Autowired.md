@@ -1,3 +1,11 @@
+注解时，属性名即为默认的Bean名
+
+### @Resource(name=xxx)
+
+直接指定Bean的name，来唯一选择匹配的bean
+
+
+
 ## @Autowired注解和静态方法
 
 

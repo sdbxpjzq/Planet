@@ -1,0 +1,1 @@
+注解在类上, 为类提供读写属性, 此外还提供了 `equals()`、`hashCode()`、`toString()` 方法
