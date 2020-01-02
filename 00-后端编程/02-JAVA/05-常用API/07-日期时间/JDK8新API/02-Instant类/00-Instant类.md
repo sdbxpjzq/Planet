@@ -6,5 +6,11 @@
 
 ![](https://pic3.superbed.cn/item/5e02d5b076085c3289e2dac1.jpg)
 
+```java
+Instant now = Instant.now();
+now.toEpochMilli(); // 毫秒数
+now.getEpochSecond(); // 秒数
+```
+
 
 
