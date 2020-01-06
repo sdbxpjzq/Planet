@@ -18,3 +18,27 @@ items.forEach(item->{
 
 ```
 
+## 注意事项
+
+**不能使用`break`和`continue` 和 `return`**
+
+
+
+```java
+List<String> list = Arrays.asList("123", "45634", "7892", "abch", "sdfhrthj", "mvkd");
+list.forEach(e -> {
+  if (e.length() >= 5) {
+    return;
+  }
+  System.out.println(e);
+});
+
+输出
+  123
+  7892
+  abch
+  mvkd
+```
+
+
+
