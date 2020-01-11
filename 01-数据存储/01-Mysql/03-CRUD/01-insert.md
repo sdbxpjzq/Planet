@@ -1,3 +1,18 @@
+## 支持where条件查询的插入
+
+```sql
+insert INTO `test_user` 
+(`id`, `name`, `password`)
+SELECT 
+22, 'zongqi', 'yyyccc'
+FROM DUAL
+WHERE not exists(select id from test_user where id = 22);
+```
+
+使用 `dual` 做表名可以让你在 select 语句后面直接跟上要插入字段的值，即使这些值还不存在当前表中
+
+
+
 ## on duplicate key update
 
 **不支持`where`条件**
@@ -34,16 +49,6 @@ INSERT INTO TABLE (a,c) VALUES (1,3),(1,7) ON DUPLICATE KEY UPDATE c=VALUES(c);
 
 
 
-
-
-
-
-
-
-
-
-
-
 ```sql
 有表数据如下:
 id c
@@ -57,6 +62,8 @@ id c
 INSERT INTO t(id,c) VALUES(1,11) ON DUPLICATE KEY UPDATE c=12 ;
 
 ```
+
+
 
 
 

@@ -38,10 +38,6 @@ public interface Fu {
 }
 ```
 
-
-
-
-
 ## 不同java版本说明
 
 java7版本-- 接口中可以包含: 
