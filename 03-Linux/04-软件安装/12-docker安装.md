@@ -16,6 +16,18 @@ yum  install -y  docker-ce-18.09.9
 systemctl start docker
 systemctl enable docker
 // 配置国内源
+# 方式1
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://hx8ia1o6.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+
+#方式2
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
 
 
