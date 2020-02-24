@@ -23,6 +23,19 @@
 
 
 
+## 常用打包命令
+
+```
+// 打包
+mvn clean install -Dmaven.test.skip=true 
+// 下载源码
+mvn dependency:resolve -Dclassifier=sources
+```
+
+
+
+
+
 ## 设置国内源
 
 https://www.runoob.com/maven/maven-repositories.html

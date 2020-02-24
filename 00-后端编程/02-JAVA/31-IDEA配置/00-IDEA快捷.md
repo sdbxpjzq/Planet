@@ -1,4 +1,20 @@
 ```
+cmd + F12 --> 弹出 方法大纲
+crtl + h  --> 当前 class 的 继承关系
+
+crtl + Enter --> 创建一些函数
+
+option + Enter --> 提示说明
+
+crtl + v  --> 调出 git 工具面版
+shift + cmd + k --> git push
+```
+
+
+
+## 代码提示
+
+```
 //psvm  生成main 方法
     public static void main(String[] args) {
  
@@ -69,4 +85,10 @@
 
 
 ```
+
+
+
+
+
+
 

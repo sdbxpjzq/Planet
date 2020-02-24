@@ -12,5 +12,9 @@ Actuator 提供了 13 个接口，具体如下表所示。
 
 
 
+http://127.0.0.1:8888/actuator
+
+
+
 [Spring Boot 服务监控，健康检查，线程信息，JVM堆信息，指标收集，运行情况监控等！](https://mp.weixin.qq.com/s/pL0b_6gu6HIzKhR3Y4Ko8A)
 

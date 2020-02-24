@@ -4,7 +4,19 @@
 
 ![](https://pic.superbed.cn/item/5e099bd476085c3289add223.jpg)
 
+
+
 ![](https://pic.superbed.cn/item/5e099bf976085c3289add8d9.jpg)
+
+
+
+```java
+Collection<String> stringList = new ArrayList<>();
+Stream<String> stringStream = stringList.parallelStream();
+
+```
+
+
 
 
 
