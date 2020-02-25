@@ -1,7 +1,3 @@
-![](https://pic.superbed.cn/item/5e0dd92676085c32896706e7.jpg)
-
-
-
 ## 归纳进可变容器
 
 作用是将元素分别归纳进可变容器 `List`、`Map`、`Set`、`Collection` 或者`ConcurrentMap` 
@@ -186,7 +182,9 @@ Map<String, Person> collect = persons.stream()
 
 
 
+## averagingInt
 
+计算流种的Integer属性 平均值
 
 
 
