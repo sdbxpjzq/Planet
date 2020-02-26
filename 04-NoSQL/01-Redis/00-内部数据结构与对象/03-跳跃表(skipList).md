@@ -10,7 +10,7 @@
 
 ### 案例
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0bx2xos1mj316c0fujtp.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bx2xos1mj316c0fujtp.jpg)
 
 新的节点可以先和2级索引比较, 确定大体范围:  然后再和1级索引比较,最后再回到原链表, 找到并插入对应位置.
 
@@ -22,13 +22,13 @@
 
 假如值为9新节点插入原链表.
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0bxfuywpcj316i0fu76a.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bxfuywpcj316i0fu76a.jpg)
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0bxhxzx0cj31700ggdj1.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bxhxzx0cj31700ggdj1.jpg)
 
 
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1g0bxipl534j316u0gewhi.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bxipl534j316u0gewhi.jpg)
 
 
 
@@ -50,9 +50,9 @@
 
 如果某一层索引再删除后只剩下一个节点, 那么整个一层就可以干掉了.
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0bxkuft1oj316g0eojtm.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bxkuft1oj316g0eojtm.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0bxls4ffjj316g0ai408.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0bxls4ffjj316g0ai408.jpg)
 
 自上而下，查找第一次出现节点的索引，并逐层找到每一层对应的节点。`O（logN）`
 

@@ -6,7 +6,7 @@ for (var index =0; index < 5 ;index++) {
 }
 
 ```
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fvmzz4ra7vj30cr03adfn.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79gy1fvmzz4ra7vj30cr03adfn.jpg)
 
 # 总结
 - `setTimeout`执行是同步的, 回调函数是异步的, 每隔一定的时间放入异步队列
@@ -75,4 +75,4 @@ for (var index =0; index < 5 ;index++) {
 }
 
 ```
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fvqaqjw2lgj30bi03cq2s.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79gy1fvqaqjw2lgj30bi03cq2s.jpg)

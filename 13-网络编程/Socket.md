@@ -28,7 +28,7 @@ Unix 有五种 I/O 模型：
 ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);
 ```
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0dydih8xoj30jk0b3jrg.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0dydih8xoj30jk0b3jrg.jpg)
 
 
 
@@ -38,7 +38,7 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 由于 CPU 要处理更多的系统调用，因此这种模型的 CPU 利用率是比较低的。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0dydyz386j30jn0bcq39.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0dydyz386j30jn0bcq39.jpg)
 
 ## I/O 复用
 

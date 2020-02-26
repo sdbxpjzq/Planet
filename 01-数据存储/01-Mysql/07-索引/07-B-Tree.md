@@ -1,4 +1,4 @@
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g49rh2evhfj30cq037glk.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g49rh2evhfj30cq037glk.jpg)
 
 每个节点都挂有数据.
 

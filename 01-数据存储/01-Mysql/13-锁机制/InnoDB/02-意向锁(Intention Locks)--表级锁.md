@@ -20,7 +20,7 @@
 
 
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g14k6ihtxpj30u00p0mxn.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g14k6ihtxpj30u00p0mxn.jpg)
 
 
 

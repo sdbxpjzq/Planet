@@ -235,7 +235,7 @@ command + 1/2/3... ： 在多个不同的session标签之间切换
 
 # mac键盘图标
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1fh7pwkb5ogj30ps0umwfc.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1fh7pwkb5ogj30ps0umwfc.jpg)
 
 
 

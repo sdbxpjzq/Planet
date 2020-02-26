@@ -35,7 +35,7 @@ insert into t2 values (8,'8'); # 阻塞
 select * from t2 where id=10 for update ; # 阻塞
 ```
 
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g38x1r6j7dj30zn0f9411.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200226121048.png)
 
 
 

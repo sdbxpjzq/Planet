@@ -30,7 +30,7 @@ fmt.Println(r) // 25105
 fmt.Printf("%T", r) // int32 --> 别名 []rune
 ```
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1g17vepgnc5j30zi0iy75t.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcgy1g17vepgnc5j30zi0iy75t.jpg)
 
 ## 官方别名
 
@@ -68,7 +68,7 @@ fmt.Println(str) // 宗京helloworld
 
 ## string和切片的内存形式
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g20x0ualzcj30uu0iimxv.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g20x0ualzcj30uu0iimxv.jpg)
 
 ## rune, byte, string转换
 

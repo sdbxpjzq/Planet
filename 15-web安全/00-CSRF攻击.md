@@ -3,9 +3,9 @@ CSRF(`Cross-site request forgery`)攻击 ：跨站请求伪造攻击
 攻击者一般会使用吸引人的图片去引导用户点击进去他设定好的全套，然后你刚登录的A网站没有关闭，这时候攻击者会利用JS事件去模拟用户请求A网站信息，从而就得到了目的。
 
 预防措施：为表单提交都加上自己定义好的token然后加密好，后台也一样的规则然后进行对比。
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fss4ud2i9uj30t80ghgod.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcgy1fss4ud2i9uj30t80ghgod.jpg)
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g09gx6loz9j30c008faaa.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g09gx6loz9j30c008faaa.jpg)
 
 ### 如何防御
 

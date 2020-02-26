@@ -138,7 +138,7 @@ where a in(...) order by b, c; # 大哥使用范围查询, 导致群龙无首
 
 ## 案例图示
 
-![image-20190130142634096](https://ws2.sinaimg.cn/large/006tNc79ly1fzoles9pvtj313d0fqh0b.jpg)
+![image-20190130142634096](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzoles9pvtj313d0fqh0b.jpg)
 
 
 

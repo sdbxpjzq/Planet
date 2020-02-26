@@ -40,7 +40,7 @@ func main() {
 
 ## 值类型
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g210pstl1zj313y0hwtbv.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g210pstl1zj313y0hwtbv.jpg)
 
 ## 注意事项
 

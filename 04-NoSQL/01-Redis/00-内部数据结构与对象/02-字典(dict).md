@@ -4,7 +4,7 @@ redis的`hash`数据类型也是通过字典方式实现
 
 redis的字典，底层是使用**哈希表**实现，每个哈希表有多个哈希节点，每个哈希节点保存了一个键值对.
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hlbr53euj30u00kydgs.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlbr53euj30u00kydgs.jpg)
 
 
 
@@ -21,7 +21,7 @@ typedef struct dictht{
 
 大小为4的空哈希表结构如下图
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0h98eu4ukj30hs097jrk.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h98eu4ukj30hs097jrk.jpg)
 
 ## 哈希表节点节点
 
@@ -47,7 +47,7 @@ typedef struct dictEntry{
 
 哈希表节点如下图（左边第一列是哈希表结构，表节点结构从左边第二列开始）所示：
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0h9cpmfi8j314o0dwdgo.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h9cpmfi8j314o0dwdgo.jpg)
 
 ## 字典
 
@@ -87,34 +87,34 @@ typedef structdict Type{
 
 完整的字典结构如下图所示
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1g0h9k5mkezj317u0n7q4d.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h9k5mkezj317u0n7q4d.jpg)
 
 ## 键冲突解决
 
 redis采用链地址法，每个哈希表节点都有一个指向next的指针，当发生冲突时，直接将当前哈希表节点的next指针指向新的结果。后面如果还有冲突的键，则当前键的next会指向下一个哈希表节点。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0h9tsh23qj312o0fk3zj.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h9tsh23qj312o0fk3zj.jpg)
 
 ## rehash(重新散列)
 
 散列表内的键值对过多或过少时，需要定期进行rehash，以提升性能或节省内存.
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0hle6kzk9j30os0kcjs4.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hle6kzk9j30os0kcjs4.jpg)
 
 1. 为字典的ht[1]散列表分配空间，这个空间的大小取决于要执行的操作以及ht[0]当前包含的键值对数量(即:ht[0].used的属性值)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0hler234fj30os0ma758.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hler234fj30os0ma758.jpg)
 
 - 扩展操作：ht[1]的大小为 第一个大于等于ht[0].used*2的2的n次方幂。如:ht[0].used=3则ht[1]的大小为8，ht[0].used=4则ht[1]的大小为8。
 - 收缩操作: ht[1]的大小为 第一个大于等于ht[0].used的2的n次方幂。
 
 2. 将保存在ht[0]中的键值对重新计算键的散列值和索引值，然后放到ht[1]指定的位置上。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hlfr0z53j30p80ot75a.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlfr0z53j30p80ot75a.jpg)
 
 3. 将ht[0]包含的所有键值对都迁移到了ht[1]之后，释放ht[0],将ht[1]设置为ht[0],并创建一个新的ht[1]哈希表为下一次rehash做准备。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hlg5r8tcj30p80ott9n.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlg5r8tcj30p80ott9n.jpg)
 
 
 

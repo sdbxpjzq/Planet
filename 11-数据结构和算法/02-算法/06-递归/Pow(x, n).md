@@ -26,13 +26,13 @@ int pow(int n){
 }
 ```
 
-![](http://ww2.sinaimg.cn/large/006tNc79ly1g3zpzdf4r3j30zq0fegpt.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g3zpzdf4r3j30zq0fegpt.jpg)
 
-![](http://ww2.sinaimg.cn/large/006tNc79ly1g3zq0fs8tqj31cg0q4q9f.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g3zq0fs8tqj31cg0q4q9f.jpg)
 
 
 
 非递归写法
 
-![](http://ww3.sinaimg.cn/large/006tNc79ly1g3zq3d6fzej30q20tsn0w.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g3zq3d6fzej30q20tsn0w.jpg)
 

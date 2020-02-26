@@ -216,7 +216,7 @@ https://ithelp.ithome.com.tw/articles/10138150
 
 轻量tag是指向提交对象的引用，
 
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fl5yh5feaij30dw0hqjse.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79gy1fl5yh5feaij30dw0hqjse.jpg)
 
 
 
@@ -224,7 +224,7 @@ https://ithelp.ithome.com.tw/articles/10138150
 
 附注Tag则是仓库中的一个独立对象。建议使用附注Tag。
 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fl5yhihky1j30dw0dddge.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79gy1fl5yhihky1j30dw0dddge.jpg)
 
 
 

@@ -19,7 +19,7 @@ insert into t1 values (null,2);
 select * from t1;
 ```
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1g0pnle1l7pj31am090glf.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcgy1g0pnle1l7pj31am090glf.jpg)
 
 执行删除操作
 
@@ -29,13 +29,13 @@ delete from t1 where id=3;
 select * from t1;
 ```
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0pnm2jxpdj31b6050a9u.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0pnm2jxpdj31b6050a9u.jpg)
 
 
 
 关闭MySQL，再启动MySQL,然后再插入一条数据
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1g0pnly0hvhj31bg06oq2q.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcgy1g0pnly0hvhj31bg06oq2q.jpg)
 
 我们看到插入了（2,2），而如果我没有重启，插入同样数据我们得到的应该是（4,2)。 上面的测试反映了**MySQLd重启后，InnoDB存储引擎的表自增id可能出现重复利用的情况**。
 

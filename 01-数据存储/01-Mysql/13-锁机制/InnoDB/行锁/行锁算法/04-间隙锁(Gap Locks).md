@@ -6,7 +6,7 @@
 
 对于键值在条件范围内但是并不存在的记录, 叫做`间隙`(GAP)
 
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g38x3ch4x9j310a0jbdjh.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200226120859.png)
 
 InnoDb 会对这个`间隙`加锁, 这种锁机制就是间隙锁
 
@@ -16,7 +16,7 @@ InnoDb 会对这个`间隙`加锁, 这种锁机制就是间隙锁
 
 间隙锁的主要目的是为了防止`幻读`的发生，也就是，防止同一事务中，两次读取的记录数不一致。或者说，在对一个范围的记录进行删除或更新时，防止在事务结束前，其他事务插入也再这个范围的记录。
 
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g3uzclhxonj312q0mgaby.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200226120921.png)
 
 
 

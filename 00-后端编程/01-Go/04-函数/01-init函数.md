@@ -22,4 +22,4 @@ func main() {
 
 如果`main.go`和`utils.go`都含有变量定义,`init`函数, 执行流程如下:
 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1g1twbkrgzrj30ir05nwem.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79gy1g1twbkrgzrj30ir05nwem.jpg)

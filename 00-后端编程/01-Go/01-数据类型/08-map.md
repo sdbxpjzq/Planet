@@ -127,7 +127,7 @@ fmt.Println(map1)
 
 2. map默认是无序的, 也不是按照添加顺序存放的, 每次遍历, 输出的顺序可能不一样
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g20yi5ypqcj30rm10k76u.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g20yi5ypqcj30rm10k76u.jpg)
 
 ## 注意事项
 

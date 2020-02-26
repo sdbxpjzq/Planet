@@ -1,6 +1,6 @@
 
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1g0wf6e4oayj30zt09vadf.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0wf6e4oayj30zt09vadf.jpg)
 
 
 

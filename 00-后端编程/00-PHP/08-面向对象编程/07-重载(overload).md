@@ -23,5 +23,5 @@ class A
 
 如果使用一个不存在的方法, 就会去自动调用类中预先定义好的某个方法, 来处理该行为. `__call()`, `__callStatic()`
 
-![](https://ws1.sinaimg.cn/large/006tNc79ly1fhstlxeba7j30vq0r4tam.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fhstlxeba7j30vq0r4tam.jpg)
 

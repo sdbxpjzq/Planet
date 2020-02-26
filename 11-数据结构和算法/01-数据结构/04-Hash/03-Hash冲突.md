@@ -4,7 +4,7 @@
 
 例：假设关键字集合为{12, 67, 56, 16, 25, 37, 22, 29, 15, 47, 48, 34},使用除留余数法(m=12)求散列表 
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0ewj54hjgj30k002ejrd.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0ewj54hjgj30k002ejrd.jpg)
 
 
 
@@ -14,7 +14,7 @@
 
 例：假设关键字集合为{12, 67, 56, 16, 25, 37, 22, 29, 15, 47, 48, 34},同样使用除留余数法求散列表，如下图所示 
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0ewjwk93xj30i60jmgm2.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0ewjwk93xj30i60jmgm2.jpg)
 
 
 
@@ -28,7 +28,7 @@
 
 例：假设关键字集合为{12, 67, 56, 16, 25, 37, 22, 29, 15, 47, 48, 34},同样使用除留余数法求散列表，如下图所示 
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0ewkpv8urj30c90ka74p.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0ewkpv8urj30c90ka74p.jpg)
 
 没有冲突的元素放在左边的表，有冲突的元素，将多余的元素放在右边的那个表。
 

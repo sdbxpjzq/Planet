@@ -16,6 +16,6 @@
 2. xxx.MYD --- 数据文件
 3. xxx.MYI --- 索引文件
 
-![image-20190124205013324](https://ws4.sinaimg.cn/large/006tNc79ly1fzhys457g2j31ec0pi492.jpg)
+![image-20190124205013324](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzhys457g2j31ec0pi492.jpg)
 
-![image-20190124205216014](https://ws3.sinaimg.cn/large/006tNc79ly1fzhyu97howj31jm0t6tos.jpg)
+![image-20190124205216014](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzhyu97howj31jm0t6tos.jpg)

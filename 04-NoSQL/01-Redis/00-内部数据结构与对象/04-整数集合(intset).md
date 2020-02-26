@@ -14,7 +14,7 @@ typedef struct intset{
 
 ontents虽然被定义是int8_t类型，但是实际是根据encoding进行确认。如果encoding是INTSET_ENC_INT16，则contents里面每一个元素都是int16_t类型（值在-32768~32767）；如果是INTSET_ENC_INT32，则contents里面每一个元素都是int32_t类型（值在-2^32~2^32-1）；如果encoding是INTSET_ENC_INT64，则contents里面每一个元素都是int64_t类型（值在-2^64~2^64-1）
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hai3pl5jj30hs06amx6.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hai3pl5jj30hs06amx6.jpg)
 
 ## 整数集合升级
 

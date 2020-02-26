@@ -1,4 +1,4 @@
-![](https://ws1.sinaimg.cn/large/006tNc79ly1fz5042107kj30f908oq33.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fz5042107kj30f908oq33.jpg)
 
 ## 多列求和
 
@@ -18,4 +18,4 @@
 
 永远正确
 
-![image-20190113154724979](https://ws4.sinaimg.cn/large/006tNc79ly1fz507mxiz1j30l30eh0u7.jpg)
+![image-20190113154724979](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fz507mxiz1j30l30eh0u7.jpg)

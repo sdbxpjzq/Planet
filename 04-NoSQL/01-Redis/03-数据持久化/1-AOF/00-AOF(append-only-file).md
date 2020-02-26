@@ -4,7 +4,7 @@ AOF 是更新频率最快的, redis会优先使用这种方式恢复数据
 
 是目前 Redis 持久化的主流方式
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g1a5a23uhhj30hs04qweh.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g1a5a23uhhj30hs04qweh.jpg)
 
 
 

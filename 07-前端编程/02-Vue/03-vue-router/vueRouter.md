@@ -101,7 +101,7 @@ const router = new VueRouter({
 
 别人写的:
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1fhy7rqo67dj30h806qt8u.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1fhy7rqo67dj30h806qt8u.jpg)
 
 
 
@@ -139,7 +139,7 @@ export default {
 
 另外参考:
 
-1. ![](https://ws2.sinaimg.cn/large/006tNc79ly1fhj661ashij30g605maa4.jpg)
+1. ![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fhj661ashij30g605maa4.jpg)
 
 
 1. https://segmentfault.com/a/1190000007387556

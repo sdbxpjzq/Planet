@@ -28,13 +28,13 @@ C语言如果要获取字符串的长度，需要从第一个字符开始，遍�
 
 看下边的例子:
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0h79gpdkbj30lo0aw74e.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h79gpdkbj30lo0aw74e.jpg)
 
 `len=5`,表示存储了一个5字节长的字符串, 而最后一个字节保存了空字符`\0`.
 
 注意的是最后的空字符不计算在`len`内.
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0h7cdq2grj30sg0b8q38.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0h7cdq2grj30sg0b8q38.jpg)
 
 ### 杜绝缓冲区溢出
 

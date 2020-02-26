@@ -1,1 +1,1 @@
-![image-20190125062906751](https://ws2.sinaimg.cn/large/006tNc79ly1fzifihwzdyj31480n6anq.jpg)
+![image-20190125062906751](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzifihwzdyj31480n6anq.jpg)

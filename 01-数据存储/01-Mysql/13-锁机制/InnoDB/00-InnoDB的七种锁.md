@@ -46,11 +46,11 @@ insert into t(name) values(xxx);
 insert into t(name) values(ooo); // 竟然没有阻塞
 ```
 
-这是**自增锁（Auto-inc Locks）** 造成的现象. ![image-20190127193938500](https://ws3.sinaimg.cn/large/006tNc79ly1fzldllkfh3j30kg0bswf9.jpg)
+这是**自增锁（Auto-inc Locks）** 造成的现象. ![image-20190127193938500](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzldllkfh3j30kg0bswf9.jpg)
 
 
 
-![image-20190127193952399](https://ws2.sinaimg.cn/large/006tNc79ly1fzldltxxyzj30r20cadgo.jpg)
+![image-20190127193952399](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzldltxxyzj30r20cadgo.jpg)
 
 
 

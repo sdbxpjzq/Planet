@@ -1,4 +1,4 @@
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g3zfbuk038j31a60gqdh2.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g3zfbuk038j31a60gqdh2.jpg)
 
 
 
@@ -24,7 +24,7 @@ Memcached将内存空间分为一组slab，每个slab里又包含一组chunk，�
 
 释放的chunk被标记为未用，等待下一个合适大小的数据写入。
 
-![Zb5Nh4.png](https://s2.ax1x.com/2019/07/16/Zb5Nh4.png)
+![](https://youpaiyun.zongqilive.cn/image/20200226134913.png)
 
 
 

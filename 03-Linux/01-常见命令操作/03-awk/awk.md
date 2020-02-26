@@ -33,11 +33,11 @@ awk '{if（$5==502） print $11}' | sort | uniq -c
 
 
 
-![](http://ww4.sinaimg.cn/large/006tNc79ly1g49zuhylakj31f80f4gsh.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g49zuhylakj31f80f4gsh.jpg)
 
-![](http://ww3.sinaimg.cn/large/006tNc79ly1g49zxl0oo2j31fq0cw0ye.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g49zxl0oo2j31fq0cw0ye.jpg)
 
-![](http://ww3.sinaimg.cn/large/006tNc79ly1g49zxvm9b9j31fi0n4dln.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g49zxvm9b9j31fi0n4dln.jpg)
 
 
 

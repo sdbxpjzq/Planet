@@ -22,5 +22,5 @@ sleep(3);
 
 日志内容
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0csyzlptxj30l6030wek.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0csyzlptxj30l6030wek.jpg)
 

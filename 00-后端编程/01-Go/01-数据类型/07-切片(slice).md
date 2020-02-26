@@ -61,7 +61,7 @@ fmt.Println(cap(slice))
 
 1. 通过`make`方式创建切片可以指定切片的大小和容量. `make`也会创建一个数组, 是由切片进行维护的
 
-![](https://ws1.sinaimg.cn/large/006tNc79ly1g20uo0fbr9j30eo05m0sp.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g20uo0fbr9j30eo05m0sp.jpg)
 
 
 
@@ -71,7 +71,7 @@ fmt.Println(cap(slice))
 
 ## 内存分析
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g20u6g3douj30fi08baa7.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g20u6g3douj30fi08baa7.jpg)
 
 
 
@@ -147,7 +147,7 @@ fmt.Println(slice) // [400] , len 小, 不会报错
 fmt.Println(a) // [400 500]
 ```
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1g20wp1pcloj31le0oqaez.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g20wp1pcloj31le0oqaez.jpg)
 
 
 
@@ -167,7 +167,7 @@ slice[0] = append(slice[0], 20)
 
 
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1g2jqcxs1cdj31640qw76h.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g2jqcxs1cdj31640qw76h.jpg)
 
 
 

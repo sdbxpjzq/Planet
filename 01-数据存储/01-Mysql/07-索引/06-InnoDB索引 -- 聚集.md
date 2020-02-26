@@ -14,21 +14,21 @@ InnoDB要求表必须有主键（MyISAM可以没有），如果没有显式指�
 
 ## 主键索引
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1fzql2kde0fj31cm0iq770.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzql2kde0fj31cm0iq770.jpg)
 
 ## 非主键索引
 
-![image-20190131182401127](https://ws4.sinaimg.cn/large/006tNc79ly1fzpxw2qw50j312u0g645a.jpg)
+![image-20190131182401127](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzpxw2qw50j312u0g645a.jpg)
 
 > 非主键索引叶子节点存储主键值
 
-![image-20190131185518069](https://ws1.sinaimg.cn/large/006tKfTcly1g0g4yv0l6aj31v80qux0t.jpg)
+![image-20190131185518069](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0g4yv0l6aj31v80qux0t.jpg)
 
 ## 检索
 
 非主键索引需要检索两遍索引：首先检索辅助索引获得主键，然后用主键到主索引中检索获得记录。
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0g4yeeljzj30780a6mxy.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0g4yeeljzj30780a6mxy.jpg)
 
 
 
@@ -48,7 +48,7 @@ BTree的一个node可以存储多个关键字
 
 用`（name，age）`这个联合索引来分析
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1g0fhkv0lcuj30vq0mqaar.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0fhkv0lcuj30vq0mqaar.jpg)
 
 
 
@@ -56,11 +56,11 @@ BTree的一个node可以存储多个关键字
 
 此时,会根据你的索引字段生成一颗新的B+树,因此， 我们每加一个索引，就会增加表的体积， 占用磁盘存储空间.然而，**注意看叶子节点**，非聚簇索引的叶子节点并不是真实数据，它的叶子节点依然是索引节点，存放的是该索引字段的值以及对应的主键索引(聚簇索引)。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0gajyhrynj30ji0gfwex.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0gajyhrynj30ji0gfwex.jpg)
 
 执行`select * from table where name='lisi'`
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0gako1vk4j30ji0hmgm6.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0gako1vk4j30ji0hmgm6.jpg)
 
 通过上图红线可以看出，先从非聚簇索引树开始查找，然后找到聚簇索引后。根据聚簇索引，在聚簇索引的B+树上，找到完整的数据
 
@@ -68,7 +68,7 @@ BTree的一个node可以存储多个关键字
 
 `select name from table where name='lisi'`
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0gamr5eg3j30ji0gfq3e.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0gamr5eg3j30ji0gfq3e.jpg)
 
 **当执行`select col from table where col = ?`，col上有索引的时候，效率比执行`select * from table where col = ? `速度快好几倍！**
 
@@ -78,7 +78,7 @@ BTree的一个node可以存储多个关键字
 
 `create index index_birthday on table(birthday);`
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0gaqlo5guj30ji0k03z8.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0gaqlo5guj30ji0k03z8.jpg)
 
  
 
@@ -88,9 +88,9 @@ BTree的一个node可以存储多个关键字
 
 `key(last_name,first_name,dob)`
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0g5pf6gmpj30rs05it8y.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0g5pf6gmpj30rs05it8y.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0g5wnfx12j30mh09wq38.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0g5wnfx12j30mh09wq38.jpg)
 
 
 

@@ -28,7 +28,7 @@
 
 
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g14pb80dpzj311f0c177l.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g14pb80dpzj311f0c177l.jpg)
 
 
 

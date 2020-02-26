@@ -53,7 +53,7 @@ XSS (Cross-Site Scripting)，跨站脚本攻击，因为缩写和 CSS重叠，�
 
 举个例子，对于评论功能来说，就得防范持久型 XSS 攻击，因为我可以在评论中输入以下内容:
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1g09gsd6smij30p0088dg5.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcgy1g09gsd6smij30p0088dg5.jpg)
 
 主要注入页面方式和非持久型 XSS 漏洞类似，只不过持久型的不是来源于 URL，referer，forms 等，而是来源于**后端从数据库中读出来的数据** 。持久型 XSS 攻击不需要诱骗点击，黑客只需要在提交表单的地方完成注入即可，但是这种 XSS 攻击的成本相对还是很高。
 

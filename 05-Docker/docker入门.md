@@ -1,4 +1,4 @@
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fwg1evhtydj30dw0bkwes.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg1evhtydj30dw0bkwes.jpg)
 
 Docker 包括三个基本概念
 镜像（Image）
@@ -29,38 +29,40 @@ EXPOSE 6379
 源文件的各种元数据都会保留. 比如 读, 写, 执行权限,文件变更时间
 
 ## ADD 更高级的复制文件
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fwg1ch1uhxj31jc0vo77w.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg1ch1uhxj31jc0vo77w.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fwg1dna83ej31g40b4dgu.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg1dna83ej31g40b4dgu.jpg)
 
 ## CMD 容器启动命令
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fwg1ndy365j31hs0cat9f.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg1ndy365j31hs0cat9f.jpg)
 
 `CMD ["nginx", "-g", "daemon  off"]`
 
 ##  ENTRYPOINT 入口点
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fwg1qbbhgmj31iy0qggnq.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg1qbbhgmj31iy0qggnq.jpg)
 
 
 ## ENV 设置环境变量
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fwg28d2f6zj31ia0nw0u4.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg28d2f6zj31ia0nw0u4.jpg)
 
 ## ARG  构建参数
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fwg2ekenj5j31iu0a8my7.jpg)
+定义匿名卷
+
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg2ekenj5j31iu0a8my7.jpg)
 
 
 ## VOLUME 定义匿名卷
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fwg2j8r1jej30qy08sq2w.jpg)
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fwg2gv11c1j31ke0asgma.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg2j8r1jej30qy08sq2w.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg2gv11c1j31ke0asgma.jpg)
 
 ## EXPOSE 声明端口
 `EXPOSE   80 ` 
 `EXPOSE  [80, 433]`
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fwg40mtqnqj31i408yjs9.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg40mtqnqj31i408yjs9.jpg)
 
 ## WORKDIR  指定工作目录
 
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fwg4bh3c08j31jg16gjwk.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fwg4bh3c08j31jg16gjwk.jpg)
 
 
 
@@ -97,7 +99,7 @@ EXPOSE 6379
 
 # 容器
 
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fweox5d3vxj312d0473yp.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNbRwly1fweox5d3vxj312d0473yp.jpg)
 
 ## docker run
 -d: 后台运行容器，并返回容器ID；

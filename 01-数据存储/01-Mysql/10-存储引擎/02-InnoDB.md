@@ -20,11 +20,11 @@ Innodb 只有2个文件,  数据和索引在一起
 
 
 
-![image-20190124210102329](https://ws4.sinaimg.cn/large/006tNc79ly1fzhz3d4wx5j315y0pgain.jpg)
+![image-20190124210102329](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzhz3d4wx5j315y0pgain.jpg)
 
 
 
-![image-20190124210304649](https://ws3.sinaimg.cn/large/006tNc79ly1fzhz5iekm8j312s0qwdou.jpg)
+![image-20190124210304649](https://youpaiyun.zongqilive.cn/image/006tNc79ly1fzhz5iekm8j312s0qwdou.jpg)
 
 
 
@@ -61,7 +61,7 @@ page Clear Thread
 
 和磁盘上数据不一致的页，成为脏页。
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0ynk9r4ppj30u00c2dge.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0ynk9r4ppj30u00c2dge.jpg)
 
 每次一个页上的数据发生修改就刷新到磁盘，这个开销非常大，但是如果不是每次一有脏页就刷新到磁盘上，那么发生宕机的时候，将会发生数据丢失，故引入“`重做日志redo-log`”
 

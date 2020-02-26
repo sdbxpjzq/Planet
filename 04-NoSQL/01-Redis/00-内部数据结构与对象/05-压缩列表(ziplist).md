@@ -4,15 +4,15 @@
 
 压缩列表是redis为了节约内存开发的，由一系列特殊编码的**连续内存块组成**的顺序型数据结构。每个压缩列表有多个节点（entry），节点可以保存一个字节数组或者整数值。
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0han4rxufj30hs014mx0.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0han4rxufj30hs014mx0.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0hapd6sjjj31aq0h4aec.jpg)	
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hapd6sjjj31aq0h4aec.jpg)	
 
-![](https://ws1.sinaimg.cn/large/006tKfTcly1g0haupr8swj31b60jgtbx.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0haupr8swj31b60jgtbx.jpg)
 
 ## 压缩节点构成
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hlkuji7uj30hs01ywed.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlkuji7uj30hs01ywed.jpg)
 
 每个节点都是由`previous_entry_length`、`encoding`、`content`三部分组成。
 
@@ -32,11 +32,11 @@ encoding记录了节点content的属性所保存的类型和长度。下表中�
 
 1）1字节长，以11开头的值，是整数编码。除掉开头的11，剩下的6位表示的10进制的值，用于表示整数的类型和长度。
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1g0hlmcyx1jj30hs056wer.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlmcyx1jj30hs056wer.jpg)
 
 2）1、2、5字节长，以00、01、10开头的值，表示字节数组编码。除掉开头的两个数字，剩余的数字表示的值，用于表示字节数组的类型和长度。
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1g0hlmq0wnyj30hs038jrh.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g0hlmq0wnyj30hs038jrh.jpg)
 
 ### content
 

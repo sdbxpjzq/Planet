@@ -63,7 +63,7 @@ func main() {
 
 `channel`是有类型的, 一个`sting`的`channel`只能存放`sting`类型数据
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1g2969ssua6j30k706u0sz.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200226122243.png)
 
 ### 管道简单使用
 
@@ -86,7 +86,7 @@ fmt.Println(num)
 
 
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g296ky8vqxj30js0gkgms.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200226122224.png)
 
 ## channel关闭
 
@@ -120,7 +120,7 @@ fmt.Printf("%v",a.Name)
 
    我们起了一个协程, 但是这个协程出现了`panic`, 如果我们没有捕获这个`panic`,就会造成整个程序崩溃, 可以使用`recover`进行处理, 这样即使这个协程出现问题, 主线程仍然不受影响, 可以继续执行
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g2975y7xvgj30j00c7wf1.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g2975y7xvgj30j00c7wf1.jpg)
 
 
 

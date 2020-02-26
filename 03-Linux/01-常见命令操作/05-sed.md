@@ -8,7 +8,7 @@ sed [option] 'sed command' filename
 
 **适用于对文本的行 内容进行处理**
 
-![](http://ww1.sinaimg.cn/large/006tNc79ly1g4a09mgmldj31fy0d40wa.jpg)
+![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g4a09mgmldj31fy0d40wa.jpg)
 
 
 
