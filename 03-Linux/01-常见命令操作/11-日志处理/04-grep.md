@@ -86,6 +86,18 @@ cat -n test.txt | grep '999'
 grep -irn "getActList"  /home/work/log/adal/ --color=auto 
 ```
 
+获取文件中的某个关键字key1, key2, key3: 
+
+```shell
+cat fileName | grep -E "key1|key2|key3"
+```
+
+忽略文件中的某个关键字， 需要转义"|"：
+
+```shell
+cat fileName | grep -v "key1|key2|key3"
+```
+
 
 
 查找文件里符合条件的字符串

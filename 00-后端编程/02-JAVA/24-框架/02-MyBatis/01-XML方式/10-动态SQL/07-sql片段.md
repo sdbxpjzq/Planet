@@ -1,4 +1,18 @@
+```
+<sql id="Base_Column_List" >
+  id, merchant_id, activity_id, activity_name, activity_type, activity_ctime, activity_start_time
+</sql>
+```
 
+```
+<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select
+    // 通过 include 这里引用 id
+    <include refid="Base_Column_List" />
+    from mkt_merchandise_activity_ref
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+```
 
 
 
