@@ -6,9 +6,15 @@
 
 没有索引, 不能使用普通的`for循环`遍历
 
-![](https://pic1.superbed.cn/item/5dfee6d376085c32891c8123.jpg)
+![](https://youpaiyun.zongqilive.cn/image/5dfee6d376085c32891c8123.jpg)
 
 
 
 它与`Collection`接口中的方法基本一致,  并没有对`Collection`接口进行功能上的扩充, 只是比`Collection`接口更加严格了.
+
+
+
+
+
+
 

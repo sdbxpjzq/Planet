@@ -1,5 +1,3 @@
-
-
 `HashSet`构造源码:
 
 ```java

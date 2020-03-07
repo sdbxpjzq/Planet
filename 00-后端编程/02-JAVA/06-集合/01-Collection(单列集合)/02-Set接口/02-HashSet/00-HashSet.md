@@ -2,6 +2,24 @@
 
 底层是一个`哈希表结构`, 查询速度非常快.
 
+
+
+## HashSet底层是什么
+
+```java
+public HashSet() {
+  map = new HashMap<>();
+}
+
+//add set 本质就是 map key是无法重复的！
+public boolean add(E e) {
+  return map.put(e, PRESENT)==null;
+}
+
+// Dummy value to associate with an Object in the backing Map
+private static final Object PRESENT = new Object();
+```
+
 ## 特点
 
 1. 不能保证元素的排列顺序
