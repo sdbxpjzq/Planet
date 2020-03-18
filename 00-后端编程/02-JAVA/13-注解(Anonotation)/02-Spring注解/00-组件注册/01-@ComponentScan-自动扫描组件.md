@@ -1,1 +1,0 @@
-只要标注了`@Controller`,`@Service`,`@Repository`,`@Component`, 都会扫描到

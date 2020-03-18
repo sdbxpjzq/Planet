@@ -1,0 +1,25 @@
+第一次进行YGC相关参数:
+
+```
+[GC (Allocation Failure) 
+[PSYoungGen: 1894K->486K(2560K)] 1894K->766K(9728K), 0.0007775 secs] 
+[Times: user=0.01 sys=0.00, real=0.00 secs] 
+```
+
+![](https://youpaiyun.zongqilive.cn/image/20200318154600.png)
+
+
+
+最后一次进行FGC相关参数：
+
+```
+[Full GC (Allocation Failure) 
+[PSYoungGen: 0K->0K(2048K)] 
+[ParOldGen: 4025K->4005K(7168K)] 4025K->4005K(9216K), [Metaspace: 3289K->3289K(1056768K)], 0.0082055 secs] 
+[Times: user=0.00 sys=0.00, real=0.01 secs]
+```
+
+![](https://youpaiyun.zongqilive.cn/image/20200318154806.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200318154813.png)
+
