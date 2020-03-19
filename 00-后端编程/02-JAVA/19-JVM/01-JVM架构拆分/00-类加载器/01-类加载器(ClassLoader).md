@@ -12,11 +12,33 @@
 
 ![](https://youpaiyun.zongqilive.cn/image/20200318112155.png)
 
+![](https://youpaiyun.zongqilive.cn/image/20200319142836.png)
+
 
 
 - 如果是JDK自带的类(Object、String、ArrayList等)，其使用的加载器是Bootstrap加载器；
 - 如果自己写的类，使用的是AppClassLoader加载器；
 - Extension加载器是负责将把java更新的程序包的类加载进行
+
+
+
+```java
+public static void main(String[] args) {
+  ClassLoader sysClassLoader = ClassLoader.getSystemClassLoader();
+  //获取系统类加载器
+  System.out.println(sysClassLoader);
+  ClassLoader extClassLoader = sysClassLoader.getParent();
+  //获取扩展类加载器
+  System.out.println(extClassLoader);
+  ClassLoader bsClassLoader = extClassLoader.getParent();
+  //获取引导类加载器
+  System.out.println(bsClassLoader);
+}
+```
+
+
+
+
 
 
 
