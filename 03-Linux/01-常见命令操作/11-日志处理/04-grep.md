@@ -74,12 +74,6 @@ grep -i "match_pattern" file_1 file_2 file_3 ...  --color=auto
 tail -f adal.log| grep  -i "getActList" --line-buffered --color=auto 
 ```
 
-查看文件文件中那些行包含‘999’
-
-```
-cat -n test.txt | grep '999'
-```
-
 查看路径下哪些文件包含`getActList`,`rn`递归查找
 
 ```shell
@@ -97,6 +91,32 @@ cat fileName | grep -E "key1|key2|key3"
 ```shell
 cat fileName | grep -v "key1|key2|key3"
 ```
+
+多个匹配条件
+
+```
+grep pattern1 files | grep pattern2 //显示既匹配 pattern1 又匹配 pattern2 的行。
+```
+
+查看指定内容上下几行
+
+```
+grep -10 ‘123’ test.log//打印匹配行的前后10行 
+grep -C 10 ‘123’ test.log//打印匹配行的前后10行 
+grep -A 10 -B 10 ‘123’ test.log //打印匹配行的前后10行
+
+grep -A 10 ‘123’ test.log //打印匹配行的后10行
+
+grep -B 10 ‘123’ test.log//打印匹配行的前10行
+```
+
+
+
+
+
+
+
+
 
 
 
