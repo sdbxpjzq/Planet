@@ -10,7 +10,7 @@
 
 缺点: 1. 两次扫描耗时严重(标记扫描一遍, 清除扫描一遍),  2. 会产生内存碎片
 
-![](https://youpaiyun.zongqilive.cn/image/4070621-6cf07565eed0fb2f.gif)
+![](https://youpaiyun.zongqilive.cn/image/tu1.gif)
 
 **标记清除算法小结：**
 
