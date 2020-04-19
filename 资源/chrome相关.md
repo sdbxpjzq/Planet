@@ -1,4 +1,0 @@
-- [皮肤](https://chrome.google.com/webstore/category/collection/chrome_themes)
-- [Postman](http://img.zongqilive.cn/Postman.zip)
-- [whistle](https://img.zongqilive.cn/whistle.crx)
-- 

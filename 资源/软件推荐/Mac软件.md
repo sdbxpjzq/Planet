@@ -1,5 +1,7 @@
 ## 软件下载网站
 
+http://www.sdifen.com/
+
 https://www.waitsun.com/
 
 https://www.zhinin.com/
