@@ -45,7 +45,7 @@ public class main {
 
 - `原子性：` 不可分割、完整性，即某个线程正在做某个具体业务时，中间不可以被加塞或者被分割，需要整体完整，要么同时成功，要么同时失败
 - `解决方法：`
-  - **加入`synchronized`**(太重了,效率低)
+  - **加入`synchronized`**(太重了,)
   - **使用JUC下的`AtomicInteger`**(这些类的底层都直接和操作系统挂钩！在内存中修改值！`Unsafe类`是一个很特殊的存在)
 
 ```java
@@ -97,6 +97,12 @@ class Test  {
 
 ###  禁止指令重排
 
+![](https://youpaiyun.zongqilive.cn/image/20200421163648.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200421171755.png)
+
+
+
 - `指令重排：` 多线程环境中线程交替执行，由于编译器优化重排的存在，两个线程中使用的变量能否保证一致性是无法确定的，结果无法预测。
 - `指令重排过程：` 源代码 -> 编辑器优化的重排 -> 指令并行的重排 -> 内存系统的重排 ->最终执行的指令
 - `内存屏障作用:`
@@ -104,7 +110,7 @@ class Test  {
 1. 保证特定操作的执行顺序
 2. 保证某些变量的内存可见性（利用该特性实现volatile的内存可见性）
 
-![](https://youpaiyun.zongqilive.cn/image/20200421163648.png)
+
 
 ![](https://youpaiyun.zongqilive.cn/image/20200421164429.png)
 
