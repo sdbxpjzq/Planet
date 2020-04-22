@@ -27,3 +27,13 @@ public class ListTest {
 }
 ```
 
+## 解决方案
+
+3种
+
+```java
+1、List<String> list = new Vector<>();
+2、List<String> list = Collections.synchronizedList(new ArrayList<>());
+3、List<String> list = new CopyOnWriteArrayList<>()；
+```
+

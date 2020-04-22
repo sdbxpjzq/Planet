@@ -21,3 +21,12 @@ public class MapTest {
 }
 ```
 
+## 解决方案
+
+2种
+
+```
+1. Map<String, String> map = Collections.synchronizedMap(new HashMap<>());
+2. Map<String, String> map = new ConcurrentHashMap<>();
+```
+

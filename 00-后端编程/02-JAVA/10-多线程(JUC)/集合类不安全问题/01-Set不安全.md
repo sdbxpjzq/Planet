@@ -21,3 +21,12 @@ public class SetTest {
 }
 ```
 
+## 解决方案
+
+2种
+
+```java
+1. Set<String> set = Collections.synchronizedSet(new HashSet<>());
+2. Set<String> set = new CopyOnWriteArraySet<>();
+```
+
