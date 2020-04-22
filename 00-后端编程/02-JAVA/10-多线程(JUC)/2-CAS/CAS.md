@@ -6,6 +6,10 @@ CAS 全称 => Compare-And-Set , **它是一条CPU并发源语**
 
 CAS并发源语体现在Java语言中就是sun.miscUnSafe类中的各个方法，调用UnSafe类中的CAS方法，JVM会帮我实现CAS汇编指令，这是一种完全依赖于`硬件`功能，通过它实现了原子操作，再次强调，由于CAS是一种系统源语，源语属于操作系统用于范畴，是由若干个指令组成，用于完成某个功能的一个过程，并且源语的执行必须是连续的，在**执行过程中不允许中断，也即是说CAS是一条原子指令，不会造成所谓的数据不一致的问题**
 
+![](https://youpaiyun.zongqilive.cn/image/20200307172419.png)
+
+
+
 ```java
 
 public class CASDemo{
