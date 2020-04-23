@@ -1,1 +1,2 @@
-直接抛出RejectedException异常来阻止系统正常运行。
+直接抛出`RejectedException异常`来阻止系统正常运行。
+
