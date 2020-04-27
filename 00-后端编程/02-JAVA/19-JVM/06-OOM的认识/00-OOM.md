@@ -14,7 +14,16 @@
 
 堆内存溢出 ， 对象过大
 
-![image-20200425142027823](https://youpaiyun.zongqilive.cn/image/image-20200425142027823.png)
+设置`-Xms10m -Xmx10m -XX:+PrintGCDetails`
+
+```java
+String str = "www.zongqilive.cn";
+while (true) {
+  str += str + new Random().nextInt(888888)+new Random().nextInt(999999);
+}
+
+// Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+```
 
 ![](https://youpaiyun.zongqilive.cn/image/20200425142054.png)
 
