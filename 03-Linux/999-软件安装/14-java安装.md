@@ -1,7 +1,7 @@
 
 
 ```shell
-yum install java java-devel 
+yum uninstall java java-devel 
 
 ```
 
