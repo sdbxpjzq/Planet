@@ -48,6 +48,8 @@ public class AppConfig {
 
 默认使用javaConfig配置的bean，如果存在close或者shutdown方法，则在bean销毁时会自动执行该方法，如果你不想执行该方法，则添加@Bean(destroyMethod="")来防止出发销毁方法
 
+
+
 ```java
 public class Foo {
     public void init() {
