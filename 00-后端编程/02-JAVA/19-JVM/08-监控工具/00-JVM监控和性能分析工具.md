@@ -17,10 +17,9 @@ https://juejin.im/post/5ccbd09af265da037129ada0#heading-5
 
 ![](https://youpaiyun.zongqilive.cn/image/20200427101003.png)
 
-## jstat（统计信息监控工具）
 
-![](https://youpaiyun.zongqilive.cn/image/20200427101027.png)
-
+下边怎么玩??
+![](https://youpaiyun.zongqilive.cn/image/20200522164122.png)
 
 
 

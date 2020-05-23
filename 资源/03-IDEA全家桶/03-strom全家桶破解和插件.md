@@ -1,3 +1,11 @@
+## 破解方式1
+
+http://idea.medeming.com/jets/
+
+
+
+## 破解方式2
+
 公众号:  小哈学Java
 
 回复 `idea`

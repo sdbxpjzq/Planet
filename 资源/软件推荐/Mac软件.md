@@ -2,8 +2,6 @@
 
 http://www.sdifen.com/
 
-https://www.waitsun.com/
-
 https://www.zhinin.com/
 
 https://www.digit77.com/
