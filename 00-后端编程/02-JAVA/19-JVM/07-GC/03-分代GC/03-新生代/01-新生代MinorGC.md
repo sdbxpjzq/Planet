@@ -1,4 +1,9 @@
-新生代使用的MinorGC，这种GC算法采用的是`复制算法（Copying）`，频繁使用
+新生代使用的MinorGC，这种GC算法采用的是`复制算法（Copying）`
+## 触发机制
+![](https://youpaiyun.zongqilive.cn/image/20200522165409.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200522192023.png)
+
 
 ## **MinorGC的过程（复制 --> 清空 --> 互换）**
 

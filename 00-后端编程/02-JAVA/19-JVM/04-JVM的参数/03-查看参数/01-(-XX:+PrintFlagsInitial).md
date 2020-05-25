@@ -1,4 +1,5 @@
 ## 查看所有参数
+查看所有的参数的默认初始值
 
 ```
 java -XX:+PrintFlagsInitial
