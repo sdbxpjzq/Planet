@@ -61,42 +61,48 @@ x\{m,n\}  # 重复字符x，至少m次，不多于n次，如：'o\{5,10\}'匹配
 
 ### grep命令常见用法
 
-不区分大小写 , 查找多个文件, 标记颜色
+### 多个匹配条件-同时满足
+```shell script
+grep pattern1 files | grep pattern2 //显示既匹配 pattern1 又匹配 pattern2 的行
 
-```shell
+cat log.txt | grep 条件一 | grep 条件二 | grep 条件三
+
+```
+### 多个匹配条件-满足其中一个
+```shell script
+grep -E "key1|key2|key3" fileName
+cat fileName | grep -E "key1|key2|key3"
+
+```
+
+### 排除(忽略)某个关键字
+需要转义"|"：
+```shell script
+grep -v 'mmm\|nnn' abc.txt // 排除 abc.txt 中的 mmm nnn
+ifconfig | grep inet | grep -v inet6 // 找到所需要的 ip 地址,使用 grep -v 屏蔽掉 inet6
+
+```
+
+### 不区分大小写 , 查找多个文件, 标记颜色
+
+```shell script
 grep -i "match_pattern" file_1 file_2 file_3 ...  --color=auto
 ```
 
-结合`tail -f`使用
+### 结合`tail -f`使用
 
 ```shell
 // grep当带上了 --line-buffer 的时候，每输出一行，就刷新一次。
 tail -f adal.log| grep  -i "getActList" --line-buffered --color=auto 
 ```
 
-查看路径下哪些文件包含`getActList`,`rn`递归查找
+### 查看路径下哪些文件包含`getActList`,`rn`递归查找
 
 ```shell
 grep -irn "getActList"  /home/work/log/adal/ --color=auto 
 ```
 
-获取文件中的某个关键字key1, key2, key3: 
 
-```shell
-cat fileName | grep -E "key1|key2|key3"
-```
-
-忽略文件中的某个关键字， 需要转义"|"：
-
-```shell
-cat fileName | grep -v "key1|key2|key3"
-```
-
-多个匹配条件
-
-```
-grep pattern1 files | grep pattern2 //显示既匹配 pattern1 又匹配 pattern2 的行。
-```
 
 查看指定内容上下几行
 
