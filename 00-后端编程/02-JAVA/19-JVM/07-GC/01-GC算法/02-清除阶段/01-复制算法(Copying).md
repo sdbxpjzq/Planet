@@ -1,5 +1,17 @@
 ## 复制算法(Copying)
 
+![](https://youpaiyun.zongqilive.cn/image/20200604163651.png)
+
+
+
+![](https://youpaiyun.zongqilive.cn/image/20200604164300.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200604164322.png)
+
+
+
+
+
 年轻代中使用的是`Minor GC`（YGC），这种GC算法采用的是复制算法(Copying)。
 
 ![](https://youpaiyun.zongqilive.cn/image/20200318162926.png)

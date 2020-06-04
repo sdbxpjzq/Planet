@@ -1,3 +1,50 @@
+![](https://youpaiyun.zongqilive.cn/image/20200603185617.png)
+![](https://youpaiyun.zongqilive.cn/image/20200603185723.png)
+![](https://youpaiyun.zongqilive.cn/image/20200603185813.png)
+![](https://youpaiyun.zongqilive.cn/image/20200603185849.png)
+
+```java
+class CanReLiveObj {
+    public static CanReLiveObj obj;
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("调用当前类重写的finalize()方法");
+        obj = this;
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+         obj = new CanReLiveObj();
+        // 对象第一次成功拯救自己
+        obj = null;
+        System.gc();
+        System.out.println("第1次GC");
+
+        // 因为Finalizer线程优先级很低, 暂停2秒, 等待它
+        TimeUnit.SECONDS.sleep(2);
+        if (obj == null) {
+            System.out.println("obj is dead");
+        } else {
+            System.out.println("obj is still alive");
+        }
+
+
+        System.out.println("第2次GC");
+        // 下面这段代码和 上面的完全相同, 但是这次自救失败了
+        obj = null;
+        System.gc();
+        TimeUnit.SECONDS.sleep(2);
+        if (obj == null) {
+            System.out.println("obj is dead");
+        } else {
+            System.out.println("obj is still alive");
+        }
+
+    }
+}
+```
+
 ## 被GC判断为”垃圾”的对象一定会回收吗
 
 即使在可达性分析算法中不可达的对象,也并非是“非死不可”的,这时候它们**暂时处于“缓刑”阶段,要真正宣告一个对象死亡,至少要经历两次标记过程**:

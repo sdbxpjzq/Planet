@@ -1,3 +1,13 @@
+![](https://youpaiyun.zongqilive.cn/image/20200604163446.png)
+
+
+
+![](https://youpaiyun.zongqilive.cn/image/20200604163515.png)
+
+
+
+
+
 老年代一般是由标记清除或者是标记清除与标记整理的混合实现
 
 ![](https://youpaiyun.zongqilive.cn/image/20200318163144.png)
@@ -8,7 +18,7 @@
 
 优点: 不需要额外空间
 
-缺点: 1. 两次扫描耗时严重(标记扫描一遍, 清除扫描一遍),  2. 会产生内存碎片
+缺点: 1. 2遍扫描耗时严重(标记扫描一遍, 清除扫描一遍),  2. 会产生内存碎片
 
 ![](https://youpaiyun.zongqilive.cn/image/tu1.gif)
 

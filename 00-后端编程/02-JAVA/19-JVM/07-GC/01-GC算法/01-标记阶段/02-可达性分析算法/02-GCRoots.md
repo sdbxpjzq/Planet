@@ -7,7 +7,12 @@
 - **方法区中常量引用的对象**
 - **本地方法栈中JNI（Native方法）引用的对象**(像多线程的 `start()` 方法)
 
+![](https://youpaiyun.zongqilive.cn/image/20200603172530.png)
+![](https://youpaiyun.zongqilive.cn/image/20200603172703.png)
 
 
 ![](https://youpaiyun.zongqilive.cn/image/20200423190625.png)
+
+## 注意
+![](https://youpaiyun.zongqilive.cn/image/20200603185406.png)
 
