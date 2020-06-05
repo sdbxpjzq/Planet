@@ -1,3 +1,25 @@
+![](https://youpaiyun.zongqilive.cn/image/20200605144828.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200605144906.png)
+
+
+
+
+
+## 内存泄露
+
+![](https://youpaiyun.zongqilive.cn/image/20200605145032.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200605145047.png)
+
+
+
+## OOM
+
+
+
+
+
 ![](https://youpaiyun.zongqilive.cn/image/20200425141601.png)
 
 ![](https://youpaiyun.zongqilive.cn/image/20200425141954.png)
