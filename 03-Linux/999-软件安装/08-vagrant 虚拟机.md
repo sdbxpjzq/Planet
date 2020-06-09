@@ -1,3 +1,25 @@
+```shell
+#  模板（box）相关命令
+vagrant box list  # 列出虚机模板
+vagrant box add USERNAME/BOX_NAME  # 添加别人做好的虚机，在线下载。
+vagrant box add PATH/TO/BOX  # 添加本地离线下载好的box
+vagrant box remove  # 移除虚机
+
+# 虚机（vm）相关命令
+vagrant init  BOX  # 初始化一个Vagrantfile文件。BOX为虚机模板名
+vagrant status  [VM_NAME]  # 虚拟机状态。不跟参数默认查看所有虚机，指定虚机名字（VM_NAME）查看指定的虚机状态
+vagrant destroy [VM_NAME]  # 删除虚机。不跟参数默认删除所有，指定虚机名字（VM_NAME）删除指定的虚机
+vagrant up [VM_NAME]  # 启动虚机。不跟参数默认启动所有，指定虚机名字（VM_NAME）启动指定的虚机
+vagrant down [VM_NAME]  # 关闭虚机。不跟参数默认关闭所有，指定虚机名字（VM_NAME）关闭指定的虚机
+vagrant suspend [VM_NAME]  # 挂起虚机。不跟参数默认关闭所有，指定虚机名字（VM_NAME）挂起指定的虚机
+vagrant resume [VM_NAME]  # 从挂起状态恢复运行。不跟参数默认恢复所有，指定虚机名字（VM_NAME）恢复指定的虚机
+vagrant reload [VM_NAME]  # 从挂起状态恢复运行。不跟参数默认恢复所有，指定虚机名字（VM_NAME）恢复指定的虚机
+```
+
+https://www.jianshu.com/p/d56d42b8d97f
+
+
+
 安装
 
 插件
@@ -49,14 +71,23 @@ vagrant box add myubuntu ~/Documents/Vagrant/Ubunutu/ubunut.box
 
 ```
 
-## 设置root密码
+## 设置root密码, root身份登录
 
 ```
 sudo passwd root
 su root
 ```
 
-编辑vim /etc/ssh/sshd_config, 修改 PermitRootLogin 值为yes
+编辑`vim /etc/ssh/sshd_config`, 修改
+
+```
+PermitRootLogin yes
+PasswordAuthentication yes
+
+service sshd restart
+```
+
+
 
 修改Vagrantfile文件
 
@@ -65,6 +96,8 @@ config.ssh.username = "root"
 config.ssh.password = "root"
 config.ssh.insert_key = "true"
 ```
+
+退出登录, 重新登录
 
 ## 配置网络
 
