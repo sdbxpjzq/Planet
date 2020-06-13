@@ -6,6 +6,11 @@
 
 
 
+1. 一秒写8万次, 读取11万
+2. CPU不是redis的性能瓶颈, 瓶颈是根据机器的内存和网络带宽
+
+
+
 
 
 https://mp.weixin.qq.com/s/IjmkjycXVJsFb6GVjiQwzA
