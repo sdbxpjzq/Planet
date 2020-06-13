@@ -1,8 +1,10 @@
-当Redis服务器执行写命令的时候，将执行的**写命令**保存到AOF文件中。
+当Redis服务器执行`写命令`的时候，将执行的`写命令`保存到AOF文件中。
 
 AOF 是更新频率最快的, redis会优先使用这种方式恢复数据
 
-是目前 Redis 持久化的主流方式
+![](https://youpaiyun.zongqilive.cn/image/20200613175706.png)
+
+
 
 ![](https://youpaiyun.zongqilive.cn/image/006tKfTcly1g1a5a23uhhj30hs04qweh.jpg)
 
@@ -23,15 +25,17 @@ AOF 是更新频率最快的, redis会优先使用这种方式恢复数据
 
 
 
-## AOF重写
-
-随着服务器的运行, AOF文件的内容会越来越多. 为了解决AOF文件体积膨胀的问题, 
+## 
 
 
 
-## 配置文件
 
-![](https://pic1.superbed.cn/item/5de8f38cf1f6f81c50d1b037.jpg)
+
+## 优点和缺点
+
+![](https://youpaiyun.zongqilive.cn/image/20200613175957.png)
+
+
 
 
 

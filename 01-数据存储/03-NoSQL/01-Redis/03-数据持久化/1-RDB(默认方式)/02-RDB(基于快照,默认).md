@@ -1,6 +1,22 @@
-RDB(基于快照)，将某一时刻的所有数据保存到一个RDB文件中
+![](https://youpaiyun.zongqilive.cn/image/20200613175039.png)
 
-## 有两个命令可以生成RDB文件
+
+
+![](https://youpaiyun.zongqilive.cn/image/20200613175219.png)
+
+
+
+
+
+
+
+
+
+## 触发生成RDB文件
+
+1. 满足配置规则,会自动触发
+2. 执行 `flushall`命令
+3. 退出redis
 
 ### 同步 `save` 模式
 
@@ -9,6 +25,14 @@ RDB(基于快照)，将某一时刻的所有数据保存到一个RDB文件中
 ### 异步 `bgsave` 模式
 
 - `BGSAVE`创建出一个**子进程**，由子进程来负责创建RDB文件，服务器进程可以继续接收请求。
+
+
+
+
+
+
+
+## 恢复
 
 Redis服务器在启动的时候，如果发现有RDB文件，就会**自动**载入RDB文件(不需要人工干预)
 
@@ -23,9 +47,43 @@ Redis服务器在启动的时候，如果发现有RDB文件，就会**自动**�
 
 
 
-## 配置文件
+## 优点和缺点
 
-![](https://pic1.superbed.cn/item/5de8f269f1f6f81c50d16c61.jpg)
+![](https://youpaiyun.zongqilive.cn/image/20200613175448.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
