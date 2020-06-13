@@ -5,6 +5,5 @@ make
 make install
 //查看默认安装
 cd /usr/local/bin
-
 ```
 
