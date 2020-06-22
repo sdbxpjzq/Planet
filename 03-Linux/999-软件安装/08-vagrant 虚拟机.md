@@ -1,9 +1,9 @@
 ```shell
 #  模板（box）相关命令
 vagrant box list  # 列出虚机模板
-vagrant box add USERNAME/BOX_NAME  # 添加别人做好的虚机，在线下载。
-vagrant box add PATH/TO/BOX  # 添加本地离线下载好的box
-vagrant box remove  # 移除虚机
+vagrant box add boxname USERNAME/BOX_NAME  # 添加别人做好的虚机，在线下载。
+vagrant box add boxname PATH/TO/BOX  # 添加本地离线下载好的box
+vagrant box remove boxname # 移除虚机
 
 # 虚机（vm）相关命令
 vagrant init  BOX  # 初始化一个Vagrantfile文件。BOX为虚机模板名
@@ -78,7 +78,7 @@ sudo passwd root
 su root
 ```
 
-编辑`vim /etc/ssh/sshd_config`, 修改
+编辑`vi /etc/ssh/sshd_config`, 修改
 
 ```
 PermitRootLogin yes
