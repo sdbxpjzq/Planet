@@ -8,10 +8,11 @@
 
 正转：由开发人员在代码中，使用new 构造方法创建对象， 开发人员主动管理对象。
 
-       ```java
+```java
 public static void main(String args[]){
    Student student = new Student(); // 在代码中， 创建对象。--正转。
 }
+```
 
-       ```
+
 

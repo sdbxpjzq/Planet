@@ -1,7 +1,7 @@
 ```shell
-find / -name "target.php"  : 精确查找文件
-find / -name "target*"    : 模糊查找文件
-find / -iname "target*"  : 不区分文件名大小写去查找文件
+// 模糊查询, . 表示当前目录, i 表示不区分大小写
+find . -iname  "coupon*.log" 
+
 man find : find 手册
 
 ```

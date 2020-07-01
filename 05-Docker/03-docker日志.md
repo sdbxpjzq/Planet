@@ -4,8 +4,6 @@
 
 ```shell
 journalctl -u docker.service
-
-
 ```
 
 ## 容器日志 
