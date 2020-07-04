@@ -1,3 +1,20 @@
+## 临键锁(Next-Key Locks)
+
+1. record lock + gap lock, 左开右闭区间。
+2. 默认情况下，innodb使用next-key locks来锁定记录。select … for update
+3. 但当查询的索引含有唯一属性的时候，Next-Key Lock 会进行优化，将其降级为Record Lock，即仅锁住索引本身，不是范围。
+4. Next-Key Lock在不同的场景中会退化:![](https://youpaiyun.zongqilive.cn/image/20200704103252.png)
+
+5. 
+
+
+
+
+
+
+
+
+
 **InnoDB默认的行锁算法**
 
 
