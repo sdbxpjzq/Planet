@@ -2,7 +2,7 @@
 
 `isInterrupt()`: 判定当前线程是否处于中断状态
 
-`static方法interrupted()`: 判断当前线程是否处于中断状态, 中
+`static方法interrupted()`: 读取并清除当前线程的终止状态值。也就是如果状态值为 true，该方法需要将状态值置回 false 然后返回 true。
 
 
 
