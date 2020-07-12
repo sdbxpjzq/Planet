@@ -6,13 +6,23 @@
 
 ![](https://youpaiyun.zongqilive.cn/image/20200710165501.png)
 
+## 锁的优缺点对比
 
+![](https://youpaiyun.zongqilive.cn/image/20200712102254.png)
+
+
+
+
+
+
+
+## 锁升级过程图
 
 ![](https://youpaiyun.zongqilive.cn/image/20200711164207.png)
 
 
 
-
+![](https://youpaiyun.zongqilive.cn/image/20200712101451.png)
 
 
 
