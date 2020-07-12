@@ -27,6 +27,12 @@
 
 
 
+![](https://youpaiyun.zongqilive.cn/image/20200709190738.png)
+
+
+
+
+
 ## JVM架构模型
 
 ![](https://youpaiyun.zongqilive.cn/image/20200319102602.png)

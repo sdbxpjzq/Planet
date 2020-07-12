@@ -1,0 +1,7 @@
+- synchronized是关键字，是JVM层面的底层啥都帮我们做了，而Lock是一个接口，是JDK层面的有丰富的API。
+- synchronized会自动释放锁，而Lock必须手动释放锁。
+- synchronized是不可中断的，Lock可以中断也可以不中断。
+- 通过Lock可以知道线程有没有拿到锁，而synchronized不能。
+- synchronized能锁住方法和代码块，而Lock只能锁住代码块。
+- Lock可以使用读锁提高多线程读效率。
+- synchronized是非公平锁，ReentrantLock可以控制是否是公平锁。
