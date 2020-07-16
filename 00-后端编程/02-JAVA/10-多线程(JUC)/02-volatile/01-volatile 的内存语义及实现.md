@@ -14,9 +14,19 @@
 
 ## 禁止指令重排
 
+volatile 关键字禁止指令重排序有两层意思：
+
+1. 当程序执行到 volatile 变量的读操作或者写操作时，在其前面的操作肯定已经全部进行，且结果已经对后面的操作可见，在其后面的操作肯定还没有进行
+
+2. 在进行指令优化时，不能将 volatile 变量之前的语句放在对 volatile 变量的读写操作之后，也不能把 volatile 变量后面的语句放到其前面执行
+
+
+
+
+
 JMM 针对编译器制定的 volatile 重排序规则表：
 
-![](https://youpaiyun.zongqilive.cn/image/20200712164055.png)
+<img src="https://youpaiyun.zongqilive.cn/image/20200712164055.png" style="zoom:200%;" />
 
 举例来说，第三行最后一个单元格的意思是：在程序中，当第一个操作为普通变量的读或写时，如果第二个操作为 volatile 写，则编译器不能重排序这两个操作。
 

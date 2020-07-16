@@ -5,3 +5,8 @@
 - synchronized能锁住方法和代码块，而Lock只能锁住代码块。
 - Lock可以使用读锁提高多线程读效率。
 - synchronized是非公平锁，ReentrantLock可以控制是否是公平锁。
+
+
+
+![](https://youpaiyun.zongqilive.cn/image/20200713090937.png)
+
