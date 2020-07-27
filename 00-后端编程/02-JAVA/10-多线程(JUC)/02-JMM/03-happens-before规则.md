@@ -44,9 +44,13 @@ double area = pi * r * r; // C
 
 3. volatile变量规则：对一个 volatile 域的写，happens-before 于任意后续对这个 volatile 域的读
 
+   简单理解: volatitle变量每次被访问时, 都强迫从主内存中读取,  当变量发生变化时, 总是强迫将最新值刷新到主内存
 
 
-4. 传递规则：如果 A happens-before B，且 B happens-before C，那么 A happens-before C。
+
+
+
+3. 传递规则：如果 A happens-before B，且 B happens-before C，那么 A happens-before C。
 
 ```java
 class VolatileExample {
