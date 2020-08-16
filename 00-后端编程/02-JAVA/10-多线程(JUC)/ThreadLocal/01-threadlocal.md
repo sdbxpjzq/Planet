@@ -1,0 +1,2 @@
+将TheadLocal对象声明成static，是为了让ThreadLocal变成强引用
+

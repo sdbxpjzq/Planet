@@ -1,0 +1,3 @@
+
+
+newScheduledThreadPool：创建一个以延迟或定时的方式来执行任务的线程池，工作队列为 DelayedWorkQueue。适用于需要多个后台线程执行周期任务。

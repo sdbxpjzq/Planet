@@ -5,9 +5,11 @@
 **特点：**
 
 1. 创建一个`定长线程池`，可控制线程的最大并发数，超出的线程会在队列中等待。
-2. newFixedThreadPool 创建的线程池CorePoolSize和MaximumPoolSize是相等的，它使用的是**LinkedBlockingQueue** 。
+2. newFixedThreadPool 创建的线程池CorePoolSize和MaximumPoolSize是相等的，它使用的是无界**LinkedBlockingQueue** 。
 
 
+
+newFixedThreadPool：固定线程数的线程池。corePoolSize = maximumPoolSize，keepAliveTime为0，工作队列使用无界的LinkedBlockingQueue。适用于为了满足资源管理的需求，而需要限制当前线程数量的场景，适用于负载比较重的服务器。
 
 
 
