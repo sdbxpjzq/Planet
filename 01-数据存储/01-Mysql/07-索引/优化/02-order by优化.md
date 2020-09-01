@@ -7,7 +7,7 @@ Mysql两种排序方式:
 
 ### 案例1
 
-组合索引 Index(A,B)。
+组合索引 Index(A,B) 
 
 - 下面条件可以用上组合索引排序：
 
@@ -22,6 +22,9 @@ Mysql两种排序方式:
   - A>5 ORDER BY B ——范围查询在第一列，排序在第二列
   - A IN(1,2) ORDER BY B ——理由同上
   - ORDER BY A ASC, B DESC ——注意，此时两列以不同顺序排序
+  - C=5 ORDER BY A -- WHERE⼦句中出现 ⾮排序使⽤到的索引列
+  -  ORDER BY A , C-- 排序列包含⾮同⼀个索引的列
+  - ORDER BY UPPER(A) -- 排序列使⽤了复杂的表达式
 
 ### 案例2
 
