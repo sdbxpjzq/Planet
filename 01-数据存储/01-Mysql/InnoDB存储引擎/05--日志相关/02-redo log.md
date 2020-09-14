@@ -35,7 +35,7 @@ redo log buffer 里面的内容,不是每次生成后都要直接持久化到磁
 为了控制 redo log 的写入策略，InnoDB 提供了 innodb_flush_log_at_trx_commit 参数，它有三种可能取值：
 
 1. 设置为 0 的时候，表示每次事务提交时都只是把 redo log 留在 redo log buffer 中 ;
-2. 设置为 1 的时候，表示每次事务提交时都将 redo log 直接持久化到磁盘；
+2. ` 默认值`设置为 1 的时候，表示每次事务提交时都将 redo log 直接持久化到磁盘；
 3. 设置为 2 的时候，表示每次事务提交时都只是把 redo log 写到 page cache。
 
 InnoDB 有一个后台线程，每隔 1 秒，就会把 redo log buffer 中的日志，调用 write 写到文件系统的 page cache，然后调用 fsync 持久化到磁盘。

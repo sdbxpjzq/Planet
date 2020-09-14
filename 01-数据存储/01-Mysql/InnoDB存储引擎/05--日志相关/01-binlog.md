@@ -8,7 +8,7 @@ binlog 的写入逻辑比较简单：事务执行过程中，先把日志写到`
 
 事务提交的时候，执行器把 binlog cache 里的完整事务写入到 binlog 中，并清空 binlog cache
 
-![](https://s2.ax1x.com/2019/07/16/ZbTE0x.md.png)
+![](https://youpaiyun.zongqilive.cn/image/ZbTE0x.md.png)
 
 可以看到，每个线程有自己 binlog cache，但是共用同一份 binlog 文件。
 
