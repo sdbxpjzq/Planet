@@ -2,6 +2,12 @@
 
 
 
+根据行为的不同 undo log 分为两种 `insert undo log`和`update undo log`。
+ insert undo log 是在 insert 操作中产生的 undo log。因为 insert 操作的记录只对事务本身可见，对于其它事务此记录是不可见的，所以 insert undo log 可以在事务提交后直接删除而不需要进行 purge 操作。
+ update undo log 是 update 或 delete 操作中产生的 undo log，因为会对已经存在的记录产生影响，为了提供 MVCC机制，因此 update undo log 不能在事务提交时就进行删除，而是将事务提交时放到入 history list 上，等待 purge 线程进行最后的删除操作。
+
+
+
 ## undo log 版本链
 
 每行记录中, 存在 3个隐藏列:

@@ -43,7 +43,7 @@
 
 READ COMMITTED 隔离级别的事务在每次 查询开始时都会⽣成⼀个独⽴的ReadView。
 
-REPEATABLE READ —— `只在第⼀次`读取数据时⽣成⼀个 ReadView，之后的查询就不会重复⽣成了。解决了 `幻读`问题
+REPEATABLE READ —— `只在第⼀次`读取数据时⽣成⼀个 ReadView，之后的查询就不会重复⽣成了。解决了 `不可重复读`   和`幻读`问题
 
 
 

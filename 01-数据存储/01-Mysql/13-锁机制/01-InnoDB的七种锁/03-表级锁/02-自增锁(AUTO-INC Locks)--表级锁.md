@@ -12,6 +12,12 @@
 
 
 
+![](https://youpaiyun.zongqilive.cn/image/20200915155833.png)
+
+![](https://youpaiyun.zongqilive.cn/image/20200915155900.png)
+
+
+
 
 
 ## innodb_autoinc_lock_mode的参数
@@ -26,7 +32,9 @@ innodb_autoinc_lock_mode的参数来控制自增长的模式，这个参数默�
 
 **设置为1：**(默认)
 
-  对于insert、replace等能够确定插入数据量的操作会使用一个更轻量级的互斥自增长机制去实现，官方称之为mutex， 暂时可以理解为一种更优化的方法即可; 这种方式下，不考虑回滚操作，生成的id是连续的。如果有回滚操作，则不一定连续。
+混合模式
+
+ 对于insert、replace等能够确定插入数据量的操作会使用一个更轻量级的互斥自增长机制去实现，官方称之为mutex， 暂时可以理解为一种更优化的方法即可; 这种方式下，不考虑回滚操作，生成的id是连续的。如果有回滚操作，则不一定连续。
 
 
 
