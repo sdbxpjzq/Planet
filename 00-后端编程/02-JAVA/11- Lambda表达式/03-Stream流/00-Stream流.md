@@ -8,11 +8,11 @@
 和之前的`Collection`操作不同, `Stream`操作还有两个基础的特征:
 
 - `Pipelining`: 中间操作都返回流对象本身, 这样多个操作,可以串成一个管道. 这样操作可以对象进行优化, 比如`延迟执行(laziness)`和`短路(short-circuiting)`
-- 内部迭代: `Sreeam`提报了内部迭代的方式, 流可以直接遍历方法.
+- 内部迭代: `Stream`提供了内部迭代的方式, 流可以直接遍历方法.
 
 
 
-![](https://pic.superbed.cn/item/5e0dd46076085c3289660d31.jpg)
+![](https://youpaiyun.zongqilive.cn/image/5e0dd46076085c3289660d31.jpg)
 
 
 

@@ -18,6 +18,12 @@
 
 ## 锁升级过程图
 
+
+
+![](https://youpaiyun.zongqilive.cn/image/Java Synchronized整体原理.jpg)
+
+
+
 ![](https://youpaiyun.zongqilive.cn/image/20200711164207.png)
 
 

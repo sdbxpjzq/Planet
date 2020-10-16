@@ -1,4 +1,6 @@
-`java,util.ArrayList`集合数据存储的结构是数组结构, 
+## ArrayList
+
+线程不安全的, 效率高; 底层使用 `Object[] elementData`存储
 
 **增删慢, 查找快**
 

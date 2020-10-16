@@ -1,4 +1,6 @@
-`java.util.LinkedList`的数据存储结构是`链表结构`
+## LinkedList
+
+对于频繁的插入, 删除操作, 使用此类效率比ArrayList高, 底层使用的是`双向链表`
 
 **增删快, 查找慢**
 
