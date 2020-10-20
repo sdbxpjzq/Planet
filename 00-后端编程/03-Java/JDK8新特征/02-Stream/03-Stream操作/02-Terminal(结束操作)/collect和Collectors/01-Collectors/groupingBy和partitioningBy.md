@@ -1,7 +1,7 @@
 ## groupingBy
 
 ```java
-Map<Type, List<Dish>> result = dishList.stream().collect(groupingBy(Dish::getType));
+Map<Type, List<Dish>> result = dishList.stream().collect(Collectors.groupingBy(Dish::getType));
 ```
 
 
