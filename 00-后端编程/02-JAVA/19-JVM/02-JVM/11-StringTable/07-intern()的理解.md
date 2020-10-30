@@ -1,11 +1,21 @@
-![](https://youpaiyun.zongqilive.cn/image/20200603144912.png)
+## intern()的使用
 
-![](https://youpaiyun.zongqilive.cn/image/20200603145015.png)
+`intern()方法`会从字符串常量池中查询当前字符串是否存在,
+
+-  若不存在, 就会将当前字符串放入常量池中,  并且返回此String对象的引用
+- 若存在,  则直接返回常量池中这个字符串的对象引用
+
+```java
+("a"+"b"+"c").intern() ==  "abc"; // true
+```
+
+就是确保字符串在内存中只有一份拷贝, 这样可以节约内存空间, 加快执行速度, 
+
+
 
 ## 关于intern()的面试难题
 
 需要了解 <a href="./07-new String()到底创建了几个对象(面试).md">07-new String()到底创建了几个对象(面试).md</a>
-![](https://youpaiyun.zongqilive.cn/image/20200603154500.png)
 
 ```java
 class A {
@@ -13,7 +23,7 @@ public static void main(String[] args) {
         String s = new String("1");
         s.intern(); // 调用此方法之前, 字符串常量池中已经存在了 "1"
         String s2 = "1";
-        System.out.println(s == s2); // jdk6: false, jdk7/80: false
+        System.out.println(s == s2); // jdk6: false, jdk7/8: false
 
         // s3 的地址为: new String("11")
         String s3 = new String("1")+new String("1");
@@ -24,11 +34,9 @@ public static void main(String[] args) {
         // jdk7:此时常量中并没有创建"11", 而是创建一个指向堆空间中 new String("11")
 
         String s4 = "11";// s4 的地址, 使用的是上一行代码执行时,在常量池中生成的"11"的地址
-        System.out.println(s3);// jdk6: false , jdk7/8: true
+        System.out.println(s3 == s4);// jdk6: false , jdk7/8: true
     }
 }
-    
-    
 ```
 ![](https://youpaiyun.zongqilive.cn/image/20200603155655.png)
 
