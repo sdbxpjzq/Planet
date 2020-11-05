@@ -11,7 +11,7 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 // 列出所有版本
  yum list docker-ce --showduplicates|sort -r  
 // 选择一个版本安装
-yum  install -y  docker-ce-18.09.9
+yum  install -y  docker-ce-19.03.9
 // 设置开机启动
 systemctl start docker
 systemctl enable docker
