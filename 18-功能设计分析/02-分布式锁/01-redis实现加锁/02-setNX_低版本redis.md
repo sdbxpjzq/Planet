@@ -35,31 +35,3 @@
     }
 
 ```
-
-## set
-
-需要高版本
-
-```php
-public static function set($key, $expTime)
-    {
-        return self::oRedis()->set($key, time() ,['nx', 'ex' => $expTime]);
-}
-
-
-public static function del($key)
-    {
-        self::oRedis()->del($key);
-    }
-```
-
-![](https://youpaiyun.zongqilive.cn/image/006tNc79ly1g3v4s84qi3j31di0oa0yj.jpg)
-
-
-
-
-
-
-
-
-

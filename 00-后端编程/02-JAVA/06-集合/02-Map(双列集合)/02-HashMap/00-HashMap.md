@@ -1,6 +1,17 @@
-存储数据采用的`哈希表结构`, 查询的速度特别快
-
 ![](https://pic2.superbed.cn/item/5dff093676085c32892cfaf5.jpg)
+
+
+
+- 允许使用`null键`和`null值`,  不保证顺序
+- key构成的集合是Set: 无序的, 不可重复的.  ==key所在的类要重写: `equals()`和`hashCode()`==
+
+- value构成的集合是Collection: 无序的, 可以重复的. ==value所在的类要重写: `equals()`==
+- 一个key-value构成一个entry
+- 
+
+
+
+
 
 是一个线程不安全的集合, 是多线程的集合, 速度快
 

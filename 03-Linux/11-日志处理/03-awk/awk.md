@@ -11,11 +11,12 @@ awk [options] 'cmd' file
 支持对单个切片的判断, 支持循环判断, 默认分隔符为空格.
 
 ```shell
-// 第一列 是tcp, 第二列是 1
+# 第一列 是tcp, 第二列是 1
 awk '$1=="tcp" && $2==1{print $0}' netstat.txt
-// NR 增加表头
+# NR 增加表头
 awk '$1=="tcp" && $2==1 || NR==1 {print $0}' netstat.txt
-// -F 使用指定的分隔符 分隔
+
+# -F 使用指定的分隔符 分隔
 awk -F ',' '{print $2}' test.txt
 ```
 
