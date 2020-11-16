@@ -55,6 +55,20 @@ master故障，发生故障转移，slave节点升级为master节点；
 
 
 
+```java
+try {
+  RLock lock = redissonClient.getLock(REDISSON_LOCK_RREFIX + resourceName);
+  boolean success = lock.tryLock(100, lockTime, TimeUnit.SECONDS);
+  // 执行业务逻辑
+} finally {
+  if (lock.isLocked() && lock.isHeldByCurrentThread()) {
+    lock.unlock();
+  }
+}
+
+
+```
+
 
 
 
