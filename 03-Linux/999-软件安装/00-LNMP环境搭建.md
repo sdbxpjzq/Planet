@@ -11,3 +11,4 @@ screen -S oneinstack #如果网路出现中断，可以执行命令`screen -R on
 ./install.sh
 
 ```
+
