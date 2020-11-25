@@ -1,5 +1,5 @@
 ```shell
-yum groupinstall 'Development Tools'
+yum group install 'Development Tools'
 ```
 
 ### Python源代码编译安装
