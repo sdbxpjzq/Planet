@@ -8,7 +8,7 @@ redis异步复制造成的锁丢失
 
 reids 主节点写成功,就返回OK -- AP
 
-zookeeper全部同步完成, , 再返回OK -- CP
+zookeeper全部同步完成, , 再返回OK -- CP 强一致性
 
 
 
@@ -25,6 +25,10 @@ master故障，发生故障转移，slave节点升级为master节点；
 导致锁丢失。
 
 由此 redis官方推荐 redlock 来解决这个问题
+
+redlock 问题:
+
+1.性能问题, 操作多个redis
 
 
 
