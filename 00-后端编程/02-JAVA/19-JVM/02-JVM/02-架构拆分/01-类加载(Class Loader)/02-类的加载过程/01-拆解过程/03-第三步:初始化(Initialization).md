@@ -1,3 +1,5 @@
+- 初始化: 对类的`静态变量`初始化为指定的值，执行静态代码块
+
 ![](https://youpaiyun.zongqilive.cn/image/20200319111803.png)
 
 注意：

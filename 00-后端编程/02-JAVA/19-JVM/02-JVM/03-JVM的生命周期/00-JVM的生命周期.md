@@ -3,7 +3,7 @@ JVM随进程的启动而启动，一个Java程序运行，就启动了一个Java
 
 ## JVM的启动
 
-ava虚拟机的启动是通过引导类加载器(bootstrap class loader) 创建一个初始类(initial class) 来完成的，这个类是由虚拟机的具体实现指定的。
+java虚拟机的启动是通过引导类加载器(bootstrap class loader) 创建一个初始类(initial class) 来完成的，这个类是由虚拟机的具体实现指定的。
 
 也就是说：JVM执行时启动，创建引导类加载器，引导类加载器会将使用到的类加载到运行时数据区，并且会配置JVM使用的参数，之后JVM会自动执行程序中的main方法。
 也可以说：伴随进程启动、伴随启动类的Main方法而启动。
