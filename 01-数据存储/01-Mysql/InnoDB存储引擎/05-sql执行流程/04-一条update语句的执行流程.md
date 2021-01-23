@@ -29,3 +29,8 @@ update person set age = 30 where id = 1;
 - 5.将 redolog undolog 写入文件并调用 fsync
 - 6.server 层生成 binlog 并写入文件调用 fsync
 - 7.事务提交，将 redolog 的状态改为 commited 释放锁
+
+
+
+
+

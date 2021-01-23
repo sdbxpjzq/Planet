@@ -1,4 +1,7 @@
-![](https://youpaiyun.zongqilive.cn/image/20200605110332.png)
+
+
+- 在默认情况下, 通过`System.gc()`或者`Runtime.getRuntime().gc()`的调用, 会显示触发Full GC
+- 然而`System.gc()`调用附带一个==免责声明: 只是提醒垃圾回收, 并不能保证立刻执行垃圾回收==
 
 
 

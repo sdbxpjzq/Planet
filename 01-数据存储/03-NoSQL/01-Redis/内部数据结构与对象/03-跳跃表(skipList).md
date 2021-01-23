@@ -60,7 +60,9 @@
 
 总体上，跳跃表删除操作的时间复杂度是`O（logN）`。
 
+## 时间复杂度
 
+![](https://youpaiyun.zongqilive.cn/image/20210121190615.png)
 
 
 
