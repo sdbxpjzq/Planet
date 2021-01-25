@@ -1,3 +1,7 @@
+![](https://youpaiyun.zongqilive.cn/image/20210125140903.png)
+
+
+
 ThreadLocal 的特性也导致了应用场景比较广泛，主要的应用场景如下：
 
 - 线程间数据隔离，各线程的 ThreadLocal 互不影响

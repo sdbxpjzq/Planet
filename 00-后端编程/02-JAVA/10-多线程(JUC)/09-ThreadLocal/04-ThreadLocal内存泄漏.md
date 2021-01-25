@@ -1,40 +1,24 @@
 ### ThreadLocalMap
 
-ThreadLocalMap内部是利用Entry来进行key-value的存储的。
-
-```java
-static class Entry extends WeakReference<ThreadLocal<?>> {
-  /** The value associated with this ThreadLocal. */
-  Object value;
-// key就是ThreadLocal实例，value就是值，Entry继承WeakReference，所以Entry对应key的引用（ThreadLocal实例）是一个弱引用
-  Entry(ThreadLocal<?> k, Object v) {
-    super(k);
-    value = v;
-  }
-}
-```
-
-
-
 
 
 ### ThreadLocal为什么会内存泄漏
 
 内存泄露问题：
 
-   ThreadLocal即使使用了WeakReference（弱引用）也可能会存在内存泄露问题，因为 entry对象中只把key(即threadLocal对象)设置成了弱引用，但是value值没有。还是会存在下面的强依赖：
+ key 是一个弱引用, 但是value值没有。还是会存在下面的强依赖：
 
 ```
-Thread -> ThreaLocalMap -> Entry -> value
+Thread -> ThreaLocalMap -> Entry(key为null) -> value
 ```
 
 
 
+弱引用有利于GC的回收，当key == null时，GC就会回收这部分空间，但value不一定能被回收，
 
+因为他和Current Thread之间还存在一个强引用的关系。由于这个强引用的关系，会导致value无法回收，如果线程对象不消除这个强引用的关系，就可能会出现OOM。
 
-ThreadLocalMap的key为ThreadLocal实例，他是一个`弱引用`，我们知道弱引用有利于GC的回收，当key == null时，GC就会回收这部分空间，
-
-但value不一定能被回收，因为他和Current Thread之间还存在一个强引用的关系。由于这个强引用的关系，会导致value无法回收，如果线程对象不消除这个强引用的关系，就可能会出现OOM。有些时候，我们调用ThreadLocalMap的remove()方法进行显式处理。
+有些时候，我们调用ThreadLocalMap的remove()方法进行显式处理。
 
 ![](https://youpaiyun.zongqilive.cn/image/20201214094343.png)
 
@@ -50,7 +34,9 @@ ThreadLocalMap的key为ThreadLocal实例，他是一个`弱引用`，我们知�
 
 
 
-当ThreadLocal Ref出栈后，由于ThreadLocalMap中Entry对ThreadLocal只是弱引用，所以ThreadLocal对象会被回收，Entry的key会变成null，然后在每次get/set/remove ThreadLocalMap中的值的时候，会自动清理key为null的value，这样value也能被回收了。***注意：\***如果ThreadLocal Ref一直没有出栈（例如上面的connectionHolder，通常我们需要保证ThreadLocal为单例且全局可访问，所以设为static），具有跟Thread相同的生命周期，那么这里的虚引用便形同虚设了，所以使用完后记得调用ThreadLocal.remove将其对应的value清除。
+当ThreadLocal Ref出栈后，由于ThreadLocalMap中Entry对ThreadLocal只是弱引用，所以ThreadLocal对象会被回收，Entry的key会变成null，然后在每次get/set/remove ThreadLocalMap中的值的时候，会自动清理key为null的value，这样value也能被回收了。
+
+注意：如果ThreadLocal Ref一直没有出栈（例如上面的connectionHolder，通常我们需要保证ThreadLocal为单例且全局可访问，所以设为static），具有跟Thread相同的生命周期，那么这里的虚引用便形同虚设了，所以使用完后记得调用ThreadLocal.remove将其对应的value清除。
 
 
 
