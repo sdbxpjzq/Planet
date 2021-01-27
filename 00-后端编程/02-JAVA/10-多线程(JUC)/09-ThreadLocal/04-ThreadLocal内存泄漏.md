@@ -86,7 +86,7 @@ private void resize() {
 
    另外在使用线程池技术的时候，由于线程不会被销毁，回收之后，下一次又会被重复利用，会导致ThreadLocal无法被释放，最终也会导致内存泄露问题。
 
-
+![](https://youpaiyun.zongqilive.cn/image/20210127152344.png)
 
 
 

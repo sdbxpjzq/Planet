@@ -14,3 +14,18 @@
 
 其实，他们俩最大的区别就是Thread.sleep()不会释放锁资源，Object.wait()会释放锁资源。
 
+
+
+
+
+上次的文章我们已经看过了 sleep 的源码了，它们的相同点主要有：
+
+- 它们都可以改变线程状态，让其进入计时等待。
+- 它们都可以响应 interrupt 中断，并抛出 InterruptedException 异常。
+
+不同点：
+
+- wait 是 Object 类的方法，而 sleep 是 Thread 类的方法。
+- wait 方法必须在 synchronized 保护的代码中使用，而 sleep 方法可在任意地方。
+- 调用 sleep 方法不释放 monitor 锁，调用 wait 方法，会释放 monitor 锁。
+- sleep 时间一到马上恢复执行（因为没有释放锁）；wait 需要等中断，或者对应对象的 notify 或 notifyAll 才会恢复，抢到锁才会执行（唤醒多个的情况）。
