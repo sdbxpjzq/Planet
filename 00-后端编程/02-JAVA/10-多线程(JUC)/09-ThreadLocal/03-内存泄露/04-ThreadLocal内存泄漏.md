@@ -1,8 +1,6 @@
-### ThreadLocalMap
-
-
-
 ### ThreadLocal为什么会内存泄漏
+
+==内存泄露与key是强引用还是弱引用 没有关系, 在池化环境下, 都会产生内存泄露, 只是对key为null的对象自动进行了特殊清理==
 
 内存泄露问题：
 
@@ -80,13 +78,7 @@ private void resize() {
 
    我们知道entry对象里面包含了threadLocal和value，threadLocal是WeakReference（弱引用）的referent。每次垃圾回收期触发GC的时候，都会回收WeakReference的referent，会将referent设置为null。那么table数组中就会存在很多threadLocal = null 但是 value不为空的entry，这种entry的存在是没有任何实际价值的。这种数据通过getEntry是获取不到值，因为它里面有if (e != null && e.get() == key)这句判断。
 
-### 为什么要使用WeakReference（弱引用）
 
-   如果使用强引用，ThreadLocal在用户进程不再被引用，但是只要线程不结束，在ThreadLocalMap中就还存在引用，无法被GC回收，会导致内存泄漏。如果用户线程耗时非常长，这个问题尤为明显。
-
-   另外在使用线程池技术的时候，由于线程不会被销毁，回收之后，下一次又会被重复利用，会导致ThreadLocal无法被释放，最终也会导致内存泄露问题。
-
-![](https://youpaiyun.zongqilive.cn/image/20210127152344.png)
 
 
 

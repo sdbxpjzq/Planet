@@ -7,7 +7,6 @@
 
 - value构成的集合是Collection: 无序的, 可以重复的. ==value所在的类要重写: `equals()`==
 - 一个key-value构成一个entry
-- 
 
 
 
