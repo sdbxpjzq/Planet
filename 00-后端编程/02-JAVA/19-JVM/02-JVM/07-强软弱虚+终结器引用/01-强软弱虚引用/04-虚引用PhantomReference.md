@@ -1,5 +1,9 @@
 ## 虚引用
 
+![](https://youpaiyun.zongqilive.cn/image/20210207194704.png)
+
+
+
 ![](https://youpaiyun.zongqilive.cn/image/20200605165958.png)
 
 ![](https://youpaiyun.zongqilive.cn/image/20200605185126.png)
