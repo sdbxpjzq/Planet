@@ -2,7 +2,7 @@
 
 Netty 的线程模型是基于主从多 Reactor 模型
 
-![](https://youpaiyun.zongqilive.cn/image/20210123144911.png)
+<img src="https://youpaiyun.zongqilive.cn/image/20210123144911.png" style="zoom:67%;" />
 
 
 

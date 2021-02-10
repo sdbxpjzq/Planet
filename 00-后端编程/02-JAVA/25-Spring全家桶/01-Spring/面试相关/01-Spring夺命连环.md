@@ -128,12 +128,6 @@ AspectJ 则属于编译时增强，主要有3种方式：
 
 
 
-### **5. FactoryBean 和 BeanFactory有什么区别？**
-
-BeanFactory 是 Bean 的工厂， ApplicationContext 的父类，IOC 容器的核心，负责生产和管理 Bean 对象。
-
-FactoryBean 是 Bean，可以通过实现 FactoryBean 接口定制实例化 Bean 的逻辑，通过代理一个Bean对象，对方法前后做一些操作。
-
 ### **6.SpringBean的生命周期说说？**
 
 SpringBean 生命周期简单概括为4个阶段：
