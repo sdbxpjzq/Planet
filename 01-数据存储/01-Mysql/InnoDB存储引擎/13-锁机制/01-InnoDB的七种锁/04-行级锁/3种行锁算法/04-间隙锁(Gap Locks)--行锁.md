@@ -44,12 +44,6 @@ InnoDb 会对这个`间隙`加锁, 这种锁机制就是间隙锁
 
 
 
-
-
-
-
-
-
 假设 有表person，字段有id, name。隔离级别为 Repeatable read。
 
 表内容：
