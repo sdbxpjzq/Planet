@@ -12,9 +12,10 @@ public class Singleton {
     static Singleton instance;
 
     static Singleton getInstance() {
-
+      // 这一层判断主要是提高效率
         if (instance == null) {
             synchronized (Singleton.class) {
+              // 但是由于没有内层 if (instance == null) ，第一批进入的每一个线程都会创建一个对象，破坏单例模式
                 if (instance == null)
                     instance = new Singleton();
             }
