@@ -1,7 +1,3 @@
-![](https://pic2.superbed.cn/item/5dff093676085c32892cfaf5.jpg)
-
-
-
 - 允许使用`null键`和`null值`,  不保证顺序
 - key构成的集合是Set: 无序的, 不可重复的.  ==key所在的类要重写: `equals()`和`hashCode()`==
 

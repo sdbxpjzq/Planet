@@ -144,8 +144,10 @@ SpringBean 生命周期简单概括为4个阶段：
 
 5. 销毁
 
-6. - 容器关闭后，如果Bean实现了`DisposableBean`接口，则会回调该接口的`destroy`方法
+   - 容器关闭后，如果Bean实现了`DisposableBean`接口，则会回调该接口的`destroy`方法
+
    - 如果配置了`destroy-method`方法，则会执行`destroy-method`配置的方法
+
 
 ![](https://youpaiyun.zongqilive.cn/image/20201206102556.png)
 
