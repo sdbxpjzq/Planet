@@ -1,4 +1,9 @@
-![](https://youpaiyun.zongqilive.cn/image/20200307175052.png)
+## Condition
+
+- Condition实例 实质上被绑定到一个锁上. 
+- 实现线程间的精确唤醒
+
+
 
 ```java
 /**
