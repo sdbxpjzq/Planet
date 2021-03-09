@@ -1,0 +1,7 @@
+- ziplist：满足以下两个条件的时候
+  - 元素数量少于128的时候
+  - 每个元素的长度小于64字节
+- skiplist：不满足上述两个条件就会使用跳表，具体来说是组合了map和skiplist
+  - map用来存储member到score的映射，这样就可以在O(1)时间内找到member对应的分数
+  - skiplist按从小到大的顺序存储分数
+  - skiplist每个元素的值都是[score,value]对
