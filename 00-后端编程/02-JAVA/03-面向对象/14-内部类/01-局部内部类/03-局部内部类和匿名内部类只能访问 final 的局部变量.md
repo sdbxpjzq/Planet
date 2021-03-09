@@ -50,7 +50,7 @@ public class Outer {
 
     //2. 在内部类的方法形参使用到外部传过来的变量，则形参需要添加 final 修饰符
     public void test2(final String s) {
-        // 第四个 class Outer$1
+        // 第四个 class Outer$2
         Inner inner = new Inner() {
             @Override
             public void print() {
