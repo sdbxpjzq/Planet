@@ -1,0 +1,1 @@
+Mybatis 会通过 `Class#forname` 得到 Mapper 接口 Class 对象，生成对应的动态代理对象，核心业务处理都会在 `InvocationHandler#invoke` 进行处理
