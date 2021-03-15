@@ -1,3 +1,7 @@
+![](https://youpaiyun.zongqilive.cn/image/20210314184415.png)
+
+
+
 ## type --  重要
 
 显示了连接使用了哪种类别,有无使用索引.
