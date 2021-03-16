@@ -24,6 +24,8 @@
 
 ### using where
 
+sql语句虽然用到了索引，但是想要查询最终结果还需要进行回表，相对于using index来说，效率较低
+
 使用 where 语句来处理结果，查询的列未被索引覆盖
 
 ### Using index condition
