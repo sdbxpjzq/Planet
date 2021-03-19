@@ -26,7 +26,7 @@ master故障，发生故障转移，slave节点升级为master节点；
 
 由此 redis官方推荐 redlock 来解决这个问题
 
-redlock 问题:
+## redlock 问题
 
 1.性能问题, 操作多个redis
 
